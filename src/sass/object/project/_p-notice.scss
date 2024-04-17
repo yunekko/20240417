@@ -1,6 +1,22 @@
 @use "global" as *;
 
 // お知らせ-----------------------------------------
+.p-notice {
+  margin: myrem(77) auto 0;
+  padding-left: myrem(27);
+  max-width: myrem(750);
+  display: flex;
+  align-items: start;
+}
+
+.p-notice-box {
+  margin-left: myrem(80);
+  border-left: 1px solid $black;
+}
+
+.p-notice__list {
+  margin-left: myrem(63);
+}
 
 .p-notice__item {
   margin-bottom: myrem(13);

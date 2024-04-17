@@ -2,12 +2,17 @@
 
 // 弁護士紹介---------------------------------------
 .p-main-person__introduce {
+  margin: 0 auto;
+  padding-top: myrem(65);
+  max-width: myrem(1040);
   position: relative;
 }
 
 .p-main-person__image {
+  margin-left: myrem(18);
   img {
-    width: myrem(454);
+    max-width: myrem(454);
+    width: 100%;
   }
 }
 
@@ -15,8 +20,8 @@
   max-width: myrem(635);
   padding: myrem(24) myrem(70) myrem(34);
   position: absolute;
-  top: 19%;
-  left: 31.5%;
+  top: 32%;
+  left: 40.5%;
   background-color: $white;
 }
 

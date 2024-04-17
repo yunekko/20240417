@@ -1,13 +1,19 @@
 @use "global" as *;
 
 // フローチャート----------------------------------------
-.p-flows {
+.p-flow {
   background-color: $blue-sub;
+}
+
+.p-flows {
+  margin-top: myrem(50);
 }
 
 .p-flow__list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 5px;
 }
 
 .p-flow__item {
@@ -32,9 +38,14 @@
   justify-content: center;
   background-color: $white;
   border-radius: 50%;
-  img {
-    width: 19%;
-  }
+}
+
+.p-flow__image img {
+  width: 55px;
+}
+
+.p-flow__image-sm img {
+  width: 30px;
 }
 
 .p-flow__title {

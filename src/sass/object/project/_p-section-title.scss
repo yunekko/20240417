@@ -18,3 +18,20 @@
   font-size: myrem(20);
   border-bottom: 2px solid $orange;
 }
+
+.p-section-title__flow {
+  margin: 0 auto;
+  padding: myrem(106) myrem(30) myrem(5);
+  padding-top: myrem(106);
+  width: fit-content;
+  font-size: myrem(27);
+  color: $blue;
+  border-bottom: 2px solid $blue;
+}
+
+.p-section-title__notice {
+  margin-top: myrem(41);
+  width: fit-content;
+  font-size: myrem(24);
+  border-bottom: 2px solid $orange;
+}

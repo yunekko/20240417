@@ -11,20 +11,22 @@
 }
 
 .c-information-catch {
+  margin: 0 auto;
+  padding-top: myrem(39);
+  max-width: myrem(500);
   position: relative;
 }
 
 .c-information-catch__text {
   max-width: myrem(389);
-  margin-left: 224px;
   font-size: myrem(26);
   font-family: $font-sub;
 }
 
 .c-information-catch__image {
   position: absolute;
-  top: -62px;
-  left: 596px;
+  top: -21px;
+  left: 369px;
   z-index: 10;
 }
 
@@ -34,7 +36,8 @@
 }
 
 .c-information-boxes {
-  margin-top: myrem(19);
+  margin: myrem(19) auto 0;
+  max-width: myrem(750);
   position: relative;
   display: flex;
   column-gap: 31px;
