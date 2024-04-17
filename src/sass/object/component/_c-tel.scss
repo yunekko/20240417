@@ -1,0 +1,22 @@
+@use "global" as *;
+
+.c-tel {
+  display: flex;
+  align-items: center;
+  column-gap: myrem(4);
+  font-size: myrem(29);
+  font-family: $font-futura;
+  letter-spacing: myrem(1.2);
+}
+
+.c-tel::before {
+  font-size: myrem(23);
+  font-family: bootstrap-icons;
+  content: "\F5B4";
+}
+
+.c-tel__information-bottom {
+  margin: 0 auto;
+  font-size: myrem(28);
+  font-weight: bold;
+}

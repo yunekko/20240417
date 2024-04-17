@@ -1,0 +1,44 @@
+@use "global" as *;
+
+.p-main-view {
+  margin-top: myrem(105);
+  background-color: $blue-sub;
+}
+
+.p-main-view__box {
+  position: relative;
+}
+
+.p-main-catch__box {
+  display: flex;
+  flex-direction: column;
+  row-gap: myrem(13);
+  position: absolute;
+  top: 54%;
+  left: myrem(51);
+  transform: translateY(-50%);
+}
+
+.p-main-catch {
+  width: fit-content;
+  padding: myrem(3) myrem(12);
+  font-size: myrem(38);
+  font-family: $font-sub;
+  font-weight: bold;
+  background-color: $white;
+}
+
+.p-main-text {
+  max-width: myrem(317);
+  font-size: myrem(14);
+  font-weight: normal;
+  line-height: 1.7;
+}
+
+.p-main-image {
+  display: flex;
+  justify-content: end;
+  img {
+    width: 70%;
+  }
+}

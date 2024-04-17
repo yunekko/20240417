@@ -1,0 +1,43 @@
+@use "global" as *;
+
+.p-point__comment {
+  margin-top: myrem(16);
+  font-size: myrem(14);
+  text-align: center;
+}
+
+.p-point__image {
+  margin-top: myrem(92);
+  margin-bottom: myrem(13);
+}
+
+.p-point__icon {
+  margin-top: myrem(61);
+}
+
+.p-point__icon img {
+  width: myrem(74);
+}
+
+.p-point__icon-lg img {
+  width: myrem(88);
+}
+
+.p-point__title {
+  margin-top: myrem(23);
+  font-family: $font-sub;
+  font-weight: bold;
+  font-size: myrem(16);
+  text-align: center;
+}
+
+.p-point__title-lg {
+  margin-top: myrem(32);
+}
+
+.p-point__text {
+  margin-top: myrem(6);
+  padding: 0 myrem(31) myrem(21);
+  font-size: myrem(12);
+  line-height: 1.8;
+}

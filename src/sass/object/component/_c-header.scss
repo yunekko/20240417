@@ -1,0 +1,75 @@
+@use "global" as *;
+
+// header-----------------------------------
+.c-header {
+  width: 100%;
+  background-color: $white;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.c-header-title__box {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: start;
+}
+
+.c-header__title {
+  font-size: myrem(16);
+  color: $blue;
+  font-family: $font-jp;
+  font-weight: normal;
+  @include mq(md) {
+    margin-top: myrem(23);
+    margin-left: myrem(17);
+  }
+}
+
+.c-header-nav__box {
+  display: none;
+  @include mq(md) {
+    margin-top: myrem(9);
+    display: block;
+  }
+}
+
+.c-header-nav {
+  display: none;
+  @include mq(md) {
+    display: block;
+    background-color: transparent;
+  }
+}
+
+.c-header-nav.open {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  font-size: 16px;
+  text-align: center;
+  padding-top: 214px;
+  background-color: lightgreen;
+}
+
+.c-header-nav__list {
+  display: flex;
+  column-gap: myrem(38);
+}
+
+.c-header__sub-title {
+  font-size: myrem(32);
+  color: $blue;
+  font-family: $font-jp;
+  font-weight: normal;
+}
+
+.c-header-nav__item {
+  font-size: myrem(14);
+  font-weight: bold;
+}

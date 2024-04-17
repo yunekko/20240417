@@ -1,0 +1,54 @@
+@use "global" as *;
+
+// 問い合わせ先--------------------------------------------
+.c-information-box {
+  text-align: center;
+  @include mq(md) {
+    position: absolute;
+    top: myrem(20);
+    left: 62%;
+  }
+}
+
+.c-information-catch {
+  position: relative;
+}
+
+.c-information-catch__text {
+  max-width: myrem(389);
+  margin-left: 224px;
+  font-size: myrem(26);
+  font-family: $font-sub;
+}
+
+.c-information-catch__image {
+  position: absolute;
+  top: -62px;
+  left: 596px;
+  z-index: 10;
+}
+
+.c-information-catch__image img {
+  width: myrem(122);
+  height: myrem(165);
+}
+
+.c-information-boxes {
+  margin-top: myrem(19);
+  position: relative;
+  display: flex;
+  column-gap: 31px;
+  z-index: 20;
+
+  margin-left: 100px;
+}
+
+.c-information-box__bottom {
+  width: myrem(350);
+  padding: myrem(13) myrem(13) myrem(6);
+  display: flex;
+  flex-direction: column;
+  color: $white;
+  background-color: $blue;
+  text-align: center;
+}

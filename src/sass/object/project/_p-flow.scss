@@ -1,0 +1,65 @@
+@use "global" as *;
+
+// フローチャート----------------------------------------
+.p-flows {
+  background-color: $blue-sub;
+}
+
+.p-flow__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.p-flow__item {
+  width: myrem(195);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.p-flow__number {
+  font-size: myrem(24);
+  font-family: $font-roboto;
+  font-weight: bold;
+}
+
+.p-flow__image {
+  width: myrem(164);
+  height: myrem(164);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $white;
+  border-radius: 50%;
+  img {
+    width: 19%;
+  }
+}
+
+.p-flow__title {
+  margin-top: myrem(17);
+  font-size: myrem(20);
+  font-family: $font-sub;
+  color: $blue;
+}
+
+.p-flow__text {
+  margin-top: myrem(15);
+  padding: 0 myrem(5);
+  font-size: myrem(11);
+  font-weight: bold;
+  text-align: start;
+  line-height: 2;
+}
+
+.p-flow__sign {
+  width: myrem(20);
+  height: myrem(20);
+  margin-top: myrem(108);
+  margin-left: myrem(4);
+  border-top: 4px solid $black-sub;
+  border-right: 4px solid $black-sub;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}

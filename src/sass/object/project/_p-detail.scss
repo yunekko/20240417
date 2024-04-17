@@ -1,0 +1,25 @@
+@use "global" as *;
+
+.p-detail__button {
+  display: inline-block;
+  font-family: $font-sub;
+  font-size: myrem(12);
+  color: $black-sub;
+  background-color: $white;
+  border-radius: myrem(50);
+  margin-top: myrem(5);
+  margin-right: myrem(9);
+  padding: myrem(9) myrem(20);
+}
+
+.p-detail__button2 {
+  margin-top: myrem(33);
+  padding: myrem(10) myrem(48);
+  font-size: myrem(14);
+  font-family: $font-jp;
+  font-weight: normal;
+  color: $white;
+  background-color: $blue;
+  display: inline-block;
+  border-radius: myrem(50);
+}

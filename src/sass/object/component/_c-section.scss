@@ -1,0 +1,7 @@
+@use "global" as *;
+
+.c-section-title {
+  font-size: myrem(33);
+  font-family: $font-sub;
+  font-weight: bold;
+}

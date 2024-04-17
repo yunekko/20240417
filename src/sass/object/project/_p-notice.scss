@@ -1,0 +1,51 @@
+@use "global" as *;
+
+// お知らせ-----------------------------------------
+
+.p-notice__item {
+  margin-bottom: myrem(13);
+  display: flex;
+  column-gap: myrem(24);
+}
+
+.p-notice__date {
+  font-size: myrem(14);
+  font-family: $font-jp;
+  font-weight: bold;
+}
+
+.p-notice__text {
+  font-size: myrem(14);
+  font-family: $font-jp;
+  font-weight: normal;
+}
+
+.p-notice-more {
+  margin-left: myrem(19);
+  position: relative;
+  font-size: myrem(14);
+  font-family: $font-jp;
+  font-weight: bold;
+  color: $blue;
+  line-height: 2;
+}
+
+.p-notice-more:before,
+.p-notice-more::after {
+  content: "";
+  width: myrem(8);
+  height: myrem(8);
+  position: absolute;
+  top: 60%;
+  border-top: 2px solid $blue;
+  border-right: 2px solid $blue;
+  transform: translateY(-50%) rotate(45deg) skew(-15deg, -15deg);
+}
+
+.p-notice-more::before {
+  left: myrem(-21);
+}
+
+.p-notice-more::after {
+  left: myrem(-12);
+}

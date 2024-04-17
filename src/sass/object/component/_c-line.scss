@@ -1,0 +1,19 @@
+@use "global" as *;
+
+.c-line {
+  width: myrem(39);
+  height: myrem(39);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.c-line {
+  color: $white;
+  background-color: $blue;
+}
+
+.c-line__inner {
+  font-size: myrem(40);
+}

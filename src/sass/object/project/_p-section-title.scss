@@ -1,0 +1,20 @@
+@use "global" as *;
+
+.p-section-title__point {
+  text-align: center;
+}
+
+.p-section-title__service {
+  padding-bottom: myrem(5);
+  width: fit-content;
+  font-size: myrem(27);
+  border-bottom: 2px solid $orange;
+}
+
+.p-section-title__other-service {
+  margin: myrem(62) auto 0;
+  padding-bottom: myrem(5);
+  width: fit-content;
+  font-size: myrem(20);
+  border-bottom: 2px solid $orange;
+}

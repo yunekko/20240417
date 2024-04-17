@@ -1,0 +1,36 @@
+@use "global" as *;
+
+// その他分野---------------------------------------------
+.p-other-service__image {
+  display: flex;
+  align-items: center;
+}
+
+.p-other-service__image img {
+  width: myrem(96);
+}
+
+.p-other-service__image-lg img {
+  width: myrem(134);
+}
+
+.p-other-service-box {
+  margin-top: myrem(7);
+  margin-left: myrem(24);
+}
+
+.p-other-service-box__center {
+  margin-left: myrem(-18);
+}
+
+.p-other-service__title {
+  font-family: $font-sub;
+  font-size: myrem(18);
+  color: $blue;
+}
+
+.p-other-service__text {
+  margin-top: myrem(16);
+  font-size: myrem(12);
+  line-height: 1.8;
+}

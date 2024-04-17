@@ -1,0 +1,39 @@
+@use "global" as *;
+
+// 弁護士紹介---------------------------------------
+.p-main-person__introduce {
+  position: relative;
+}
+
+.p-main-person__image {
+  img {
+    width: myrem(454);
+  }
+}
+
+.p-main-person__info {
+  max-width: myrem(635);
+  padding: myrem(24) myrem(70) myrem(34);
+  position: absolute;
+  top: 19%;
+  left: 31.5%;
+  background-color: $white;
+}
+
+.p-main-person {
+  font-size: myrem(32);
+  font-family: $font-jp;
+  font-weight: bold;
+}
+
+.p-main-person__name {
+  margin-left: myrem(33);
+}
+
+.p-main-person__comment {
+  margin-top: myrem(19);
+  font-size: myrem(14);
+  font-family: $font-jp;
+  font-weight: normal;
+  line-height: 1.7;
+}

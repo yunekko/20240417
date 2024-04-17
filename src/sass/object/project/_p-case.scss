@@ -1,0 +1,38 @@
+@use "global" as *;
+
+.p-cases {
+  margin-top: myrem(16);
+  padding: myrem(14) myrem(17) myrem(11);
+  background-color: $blue-sub;
+  text-align: start;
+}
+
+.p-case__title {
+  margin-bottom: myrem(5);
+  font-size: myrem(14);
+  font-family: $font-sub;
+  color: $blue;
+}
+
+.p-case__list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: myrem(16);
+}
+
+.p-case__item {
+  font-size: myrem(12);
+  font-family: $font-sub;
+}
+
+.p-case__item::before {
+  content: "";
+  width: myrem(3);
+  height: myrem(3);
+  margin-right: myrem(5);
+  position: relative;
+  top: myrem(-1);
+  display: inline-block;
+  background-color: $black;
+  border-radius: 50%;
+}
