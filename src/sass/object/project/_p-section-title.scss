@@ -35,3 +35,11 @@
   font-size: myrem(24);
   border-bottom: 2px solid $orange;
 }
+
+.p-section-title__office {
+  margin-left: myrem(-16);
+  padding: 0 myrem(19);
+  width: fit-content;
+  font-size: myrem(27);
+  border-bottom: 2px solid $orange;
+}

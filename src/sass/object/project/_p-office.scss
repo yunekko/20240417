@@ -1,0 +1,48 @@
+@use "global" as *;
+
+.p-office {
+  padding-top: myrem(43);
+  display: flex;
+  justify-content: center;
+  column-gap: myrem(250);
+}
+
+.p-office-information {
+  margin-top: myrem(83);
+}
+
+.p-office-information__inner {
+  margin-top: 26px;
+  padding-right: 28px;
+}
+
+.p-office-name {
+  font-size: myrem(20);
+  font-family: $font-sub;
+  font-weight: bold;
+}
+
+.p-office-address {
+  margin-top: myrem(3);
+  font-size: myrem(18);
+  font-family: $font-jp;
+  font-weight: normal;
+}
+
+.p-office-tel {
+  margin-top: myrem(17);
+  font-size: myrem(18);
+  font-family: $font-jp;
+  font-weight: normal;
+}
+
+.p-office-fax {
+  font-size: myrem(18);
+  font-family: $font-jp;
+  font-weight: normal;
+}
+
+.p-office-map iframe {
+  max-width: myrem(460);
+  height: myrem(398);
+}

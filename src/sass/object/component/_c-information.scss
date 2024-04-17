@@ -25,8 +25,8 @@
 
 .c-information-catch__image {
   position: absolute;
-  top: -21px;
-  left: 369px;
+  top: myrem(-21);
+  right: myrem(7);
   z-index: 10;
 }
 
@@ -40,7 +40,7 @@
   max-width: myrem(750);
   position: relative;
   display: flex;
-  column-gap: 31px;
+  column-gap: myrem(31);
   z-index: 20;
 }
 
