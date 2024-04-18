@@ -3,7 +3,10 @@
 // 問い合わせ先--------------------------------------------
 .c-information-box {
   text-align: center;
+  margin: myrem(33) 0 myrem(23);
   @include mq(md) {
+    margin-top: 0;
+    margin-bottom: 0;
     position: absolute;
     top: myrem(20);
     left: 62%;

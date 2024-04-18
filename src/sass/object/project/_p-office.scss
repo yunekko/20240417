@@ -4,7 +4,11 @@
   padding-top: myrem(43);
   display: flex;
   justify-content: center;
+  flex-direction: column;
   column-gap: myrem(250);
+  @include mq(md) {
+    flex-direction: row;
+  }
 }
 
 .p-office-information {
@@ -43,6 +47,9 @@
 }
 
 .p-office-map iframe {
-  max-width: myrem(460);
+  max-width: myrem(320);
   height: myrem(398);
+  @include mq(md) {
+    max-width: myrem(460);
+  }
 }

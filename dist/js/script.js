@@ -41,10 +41,12 @@ jQuery(function ($) {
 // ハンバーガー
 $(function () {
   $(".c-hamburger-button").on("click", function () {
-    $(".c-hamburger-button__line, .c-header-nav").toggleClass("open");
+    $(".c-hamburger-button__line, .c-header-nav__box").toggleClass("open");
   });
 });
 
 $(".c-header-nav__link").on("click", function () {
-  $(".c-header-nav, .c-hamburger-button__line").removeClass("open");
+  $(
+    ".c-header-title, .c-header__sub-title, .c-header-nav__link, .c-hamburger-button__line"
+  ).removeClass("open");
 });

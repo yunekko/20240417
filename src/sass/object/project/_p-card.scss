@@ -51,11 +51,15 @@
   width: 100%;
   padding: myrem(25) myrem(17);
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-around;
   column-gap: myrem(29);
   background-color: $blue-1;
   border-radius: myrem(5);
+  @include mq(md) {
+    flex-direction: row;
+  }
 }
 
 .p-card__service:nth-child(2) {
@@ -70,19 +74,40 @@
 .p-cards__other-service {
   margin-top: myrem(38);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   column-gap: myrem(27);
+  @include mq(md) {
+    flex-direction: row;
+  }
 }
 
 .p-card__other-service {
-  width: myrem(365);
+  max-width: myrem(365);
   padding: myrem(35) myrem(40) myrem(46);
   display: flex;
   box-shadow: 0 0 myrem(5) myrem(2) rgba(0, 0, 0, 0.1);
   border-radius: myrem(5);
 }
 
+// 取扱分野
+.p-cards__service2 {
+  margin-top: myrem(84);
+  display: flex;
+  justify-content: center;
+  column-gap: myrem(30);
+}
+
 .p-card__service2 {
   width: myrem(350);
   text-align: center;
+}
+
+.p-cards__other-service2 {
+  margin-top: myrem(75);
+  column-gap: myrem(20);
+}
+
+.p-card__other-service2 {
+  padding: myrem(32) myrem(35) myrem(25) myrem(39);
 }

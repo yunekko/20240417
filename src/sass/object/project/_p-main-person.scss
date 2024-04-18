@@ -19,10 +19,13 @@
 .p-main-person__info {
   max-width: myrem(635);
   padding: myrem(24) myrem(70) myrem(34);
-  position: absolute;
+  position: initial;
   top: 32%;
   left: 40.5%;
   background-color: $white;
+  @include mq(md) {
+    position: absolute;
+  }
 }
 
 .p-main-person {

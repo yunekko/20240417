@@ -43,3 +43,29 @@
   font-size: myrem(27);
   border-bottom: 2px solid $orange;
 }
+
+.p-section-title__service-view {
+  padding: myrem(10) myrem(131);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: $white;
+  background-color: $blue;
+  text-align: center;
+  border-radius: myrem(5);
+}
+
+.p-section-title__main-service {
+  margin: 0 auto;
+  padding: 0 myrem(10);
+  width: fit-content;
+  border-bottom: 2px solid $orange;
+}
+
+.p-section-title__fee {
+  margin: 0 auto;
+  padding: 0 myrem(10);
+  width: fit-content;
+  border-bottom: 2px solid $orange;
+}

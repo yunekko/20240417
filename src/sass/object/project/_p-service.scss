@@ -4,7 +4,11 @@
 .p-service__main {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   column-gap: myrem(80);
+  @include mq(md) {
+    flex-direction: row;
+  }
 }
 
 .p-service-title__area {
@@ -67,6 +71,7 @@
   padding-bottom: myrem(7);
   font-size: myrem(34);
   font-family: $font-sub;
+  font-weight: bold;
   color: $blue;
   border-bottom: 1px solid $blue;
 }
@@ -84,4 +89,67 @@
   padding: myrem(9) myrem(44);
   border-radius: 0;
   border: 1px solid $black;
+}
+
+// 取扱分野ページ
+.p-service-view {
+  position: relative;
+  height: myrem(227);
+  background-image: url(/dist/images/service-view.jpg);
+  background-size: cover;
+}
+
+.p-service-title__top {
+  font-size: myrem(22);
+}
+
+.p-service-title__bottom {
+  font-size: myrem(14);
+}
+
+// 弁護士コメント
+.p-service-page__person-introduce {
+  margin: 0 auto;
+  max-width: myrem(1280);
+  position: relative;
+}
+
+.p-service-page__person-info {
+  margin-top: myrem(110);
+  margin-left: myrem(-52);
+  padding-bottom: myrem(108);
+  max-width: myrem(812);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.p-service-page__info-box {
+  margin: myrem(107) auto 0;
+  padding-left: myrem(47);
+  max-width: myrem(520);
+}
+
+.p-service-page__person-title {
+  font-size: myrem(33);
+  font-family: $font-sub;
+  font-weight: bold;
+  color: $black-sub;
+  line-height: 1.4;
+}
+
+.p-service-page__person-comment {
+  margin-top: myrem(17);
+  font-size: myrem(16);
+  letter-spacing: myrem(0.4);
+}
+
+.p-service-page__person-image {
+  position: absolute;
+  top: myrem(44);
+  right: 7.8%;
+}
+
+.p-service-page__person-image img {
+  width: myrem(491);
 }

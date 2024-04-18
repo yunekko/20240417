@@ -1,0 +1,14 @@
+@use "global" as *;
+
+.p-breadcrumb__list {
+  display: flex;
+}
+
+.p-breadcrumb__item {
+  font-size: myrem(12);
+}
+
+.p-breadcrumb__item:not(:last-child)::after {
+  content: ">";
+  margin: 0 myrem(5);
+}

@@ -1,0 +1,15 @@
+@use "global" as *;
+
+.p-fee__about {
+  margin: myrem(75) auto 0;
+  max-width: myrem(1000);
+}
+
+.p-fee__text {
+  font-size: myrem(16);
+  line-height: 1.7;
+}
+
+.p-fee__text:last-child {
+  margin-top: myrem(30);
+}
