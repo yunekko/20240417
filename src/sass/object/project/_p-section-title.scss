@@ -5,10 +5,14 @@
 }
 
 .p-section-title__service {
+  margin: 0 auto;
   padding-bottom: myrem(5);
   width: fit-content;
   font-size: myrem(27);
   border-bottom: 2px solid $orange;
+  @include mq(md) {
+    margin: 0;
+  }
 }
 
 .p-section-title__other-service {
@@ -30,22 +34,28 @@
 }
 
 .p-section-title__notice {
-  margin-top: myrem(41);
+  margin: 0 auto;
   width: fit-content;
   font-size: myrem(24);
   border-bottom: 2px solid $orange;
+  @include mq(md) {
+    margin-top: myrem(41);
+  }
 }
 
 .p-section-title__office {
-  margin-left: myrem(-16);
+  margin: 0 auto;
   padding: 0 myrem(19);
   width: fit-content;
   font-size: myrem(27);
   border-bottom: 2px solid $orange;
+  @include mq(md) {
+    margin: 0 0 0 myrem(-16);
+  }
 }
 
 .p-section-title__service-view {
-  padding: myrem(10) myrem(131);
+  padding: myrem(10) myrem(50);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -54,6 +64,9 @@
   background-color: $blue;
   text-align: center;
   border-radius: myrem(5);
+  @include mq(md) {
+    padding: myrem(10) myrem(131);
+  }
 }
 
 .p-section-title__main-service {

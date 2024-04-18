@@ -9,22 +9,35 @@
 }
 
 .p-main-person__image {
-  margin-left: myrem(18);
+  text-align: center;
+  @include mq(md) {
+    margin-left: myrem(18);
+    text-align: start;
+  }
   img {
-    max-width: myrem(454);
+    max-width: myrem(300);
     width: 100%;
+    @include mq(md) {
+      max-width: myrem(454);
+    }
   }
 }
 
 .p-main-person__info {
-  max-width: myrem(635);
-  padding: myrem(24) myrem(70) myrem(34);
+  margin: myrem(50) auto 0;
+  max-width: myrem(320);
+  padding: myrem(15);
   position: initial;
   top: 32%;
   left: 40.5%;
   background-color: $white;
+  text-align: center;
   @include mq(md) {
+    margin: 0;
+    padding: myrem(24) myrem(70) myrem(34);
+    max-width: myrem(635);
     position: absolute;
+    text-align: start;
   }
 }
 

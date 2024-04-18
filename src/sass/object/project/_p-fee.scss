@@ -2,7 +2,11 @@
 
 .p-fee__about {
   margin: myrem(75) auto 0;
+  padding: 0 myrem(15);
   max-width: myrem(1000);
+  @include mq(md) {
+    padding: 0;
+  }
 }
 
 .p-fee__text {

@@ -13,6 +13,10 @@
 
 .p-office-information {
   margin-top: myrem(83);
+  text-align: center;
+  @include mq(md) {
+    text-align: start;
+  }
 }
 
 .p-office-information__inner {
@@ -44,6 +48,13 @@
   font-size: myrem(18);
   font-family: $font-jp;
   font-weight: normal;
+}
+
+.p-office-map {
+  margin: myrem(40) auto 0;
+  @include mq(md) {
+    margin: 0;
+  }
 }
 
 .p-office-map iframe {

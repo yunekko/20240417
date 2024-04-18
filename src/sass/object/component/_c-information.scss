@@ -16,21 +16,32 @@
 .c-information-catch {
   margin: 0 auto;
   padding-top: myrem(39);
-  max-width: myrem(500);
+  max-width: myrem(300);
   position: relative;
+  @include mq(md) {
+    max-width: myrem(500);
+  }
 }
 
 .c-information-catch__text {
-  max-width: myrem(389);
-  font-size: myrem(26);
+  max-width: myrem(200);
+  font-size: myrem(20);
   font-family: $font-sub;
+  @include mq(md) {
+    max-width: myrem(389);
+    font-size: myrem(26);
+  }
 }
 
 .c-information-catch__image {
   position: absolute;
-  top: myrem(-21);
-  right: myrem(7);
+  top: myrem(19);
+  right: -9%;
   z-index: 10;
+  @include mq(md) {
+    top: myrem(-21);
+    right: myrem(7);
+  }
 }
 
 .c-information-catch__image img {
@@ -43,16 +54,25 @@
   max-width: myrem(750);
   position: relative;
   display: flex;
+  flex-direction: column;
+  row-gap: myrem(20);
   column-gap: myrem(31);
   z-index: 20;
+  @include mq(md) {
+    flex-direction: row;
+  }
 }
 
 .c-information-box__bottom {
   width: myrem(350);
+  margin: 0 auto;
   padding: myrem(13) myrem(13) myrem(6);
   display: flex;
   flex-direction: column;
   color: $white;
   background-color: $blue;
   text-align: center;
+  @include mq(md) {
+    margin: 0;
+  }
 }

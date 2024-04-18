@@ -1,6 +1,10 @@
 @use "global" as *;
 
 .l-breadcrumb {
-  margin-top: myrem(135);
-  padding-left: myrem(140);
+  margin-top: myrem(100);
+  padding-left: myrem(20);
+  @include mq(md) {
+    margin-top: myrem(135);
+    padding-left: myrem(140);
+  }
 }

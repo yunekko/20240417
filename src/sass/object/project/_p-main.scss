@@ -1,8 +1,11 @@
 @use "global" as *;
 
 .p-main-view {
-  margin-top: myrem(105);
+  margin-top: myrem(81);
   background-color: $blue-sub;
+  @include mq(md) {
+    margin-top: myrem(105);
+  }
 }
 
 .p-main-view__box {
@@ -14,31 +17,44 @@
   flex-direction: column;
   row-gap: myrem(13);
   position: absolute;
-  top: 54%;
-  left: myrem(51);
+  top: 70%;
+  left: myrem(15);
   transform: translateY(-50%);
+  @include mq(md) {
+    top: 54%;
+    left: myrem(51);
+  }
 }
 
 .p-main-catch {
   width: fit-content;
   padding: myrem(3) myrem(12);
-  font-size: myrem(38);
+  font-size: myrem(18);
   font-family: $font-sub;
   font-weight: bold;
   background-color: $white;
+  @include mq(md) {
+    font-size: myrem(38);
+  }
 }
 
 .p-main-text {
   max-width: myrem(317);
-  font-size: myrem(14);
+  font-size: myrem(10);
   font-weight: normal;
   line-height: 1.7;
+  @include mq(md) {
+    font-size: myrem(14);
+  }
 }
 
 .p-main-image {
   display: flex;
   justify-content: end;
   img {
-    width: 70%;
+    width: 85%;
+    @include mq(md) {
+      width: 70%;
+    }
   }
 }

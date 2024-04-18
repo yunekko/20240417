@@ -2,4 +2,8 @@
 
 .l-main-service {
   margin-top: myrem(94);
+  padding: 0 myrem(10);
+  @include mq(md) {
+    padding: 0;
+  }
 }

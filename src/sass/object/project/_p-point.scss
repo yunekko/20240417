@@ -1,14 +1,23 @@
 @use "global" as *;
 
 .p-point__comment {
-  margin-top: myrem(16);
+  margin-top: myrem(45);
+  padding: 0 myrem(23);
   font-size: myrem(14);
-  text-align: center;
+  text-align: start;
+  @include mq(md) {
+    margin-top: myrem(16);
+    padding: 0;
+    text-align: center;
+  }
 }
 
 .p-point__image {
-  margin-top: myrem(92);
+  margin-top: myrem(45);
   margin-bottom: myrem(13);
+  @include mq(md) {
+    margin-top: myrem(92);
+  }
 }
 
 .p-point__icon {

@@ -31,17 +31,25 @@
 }
 
 .c-footer-nav__list {
-  margin-left: myrem(-29);
+  margin: 0 myrem(1) 0;
   display: flex;
   justify-content: center;
-  column-gap: myrem(25);
+  column-gap: myrem(28);
+  row-gap: myrem(20);
+  flex-wrap: wrap;
+  @include mq(md) {
+    margin-left: myrem(-29);
+    column-gap: myrem(25);
+  }
 }
 
 .c-footer-bottom {
-  margin-top: 33px;
-  margin-left: -27px;
+  margin-top: myrem(33);
   display: flex;
   align-items: center;
   justify-content: center;
   column-gap: myrem(11);
+  @include mq(md) {
+    margin-left: -27px;
+  }
 }

@@ -3,25 +3,39 @@
 // お知らせ-----------------------------------------
 .p-notice {
   margin: myrem(77) auto 0;
-  padding-left: myrem(27);
+  padding: myrem(15);
   max-width: myrem(750);
   display: flex;
   align-items: start;
+  flex-direction: column;
+  @include mq(md) {
+    flex-direction: row;
+    padding: 0 0 0 myrem(27);
+  }
 }
 
 .p-notice-box {
-  margin-left: myrem(80);
-  border-left: 1px solid $black;
+  margin-top: 30px;
+  @include mq(md) {
+    margin-top: 0;
+    margin-left: myrem(80);
+    border-left: 1px solid $black;
+  }
 }
 
 .p-notice__list {
-  margin-left: myrem(63);
+  @include mq(md) {
+    margin-left: myrem(63);
+  }
 }
 
 .p-notice__item {
-  margin-bottom: myrem(13);
+  margin-bottom: myrem(25);
   display: flex;
   column-gap: myrem(24);
+  @include mq(md) {
+    margin-bottom: myrem(13);
+  }
 }
 
 .p-notice__date {
