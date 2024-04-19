@@ -45,11 +45,12 @@ $(function () {
   });
 });
 
-$(".c-header-nav__item a").on("click", function () {
-  $(
-    ".c-header-title, .c-header__sub-title, .c-header-nav__box, .c-hamburger-button__line"
-  ).removeClass("open");
-});
+$(".c-header__title, .c-header__sub-title, .c-header-nav__item a").on(
+  "click",
+  function () {
+    $(".c-header__nav-box, .c-hamburger-button__line").removeClass("open");
+  }
+);
 
 // ハンバーガーメニュー;
 // $(".js-hamburger").click(function () {

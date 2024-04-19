@@ -41,10 +41,10 @@
 }
 
 .c-header__nav-box {
-  display: none;
-  position: relative;
+  position: absolute;
+  top: myrem(80);
   left: -100vw;
-  transition: 0.2s;
+  transition: all 0.5s;
   @include mq(md) {
     margin-top: myrem(9);
     display: block;
@@ -53,26 +53,19 @@
 }
 
 .c-header__nav-box.open {
-  padding-top: myrem(27);
   display: block;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   position: fixed;
   width: 100vw;
-  height: 100vh;
+  height: 90vh;
   top: myrem(80);
   left: 0;
   text-align: center;
   background-color: $gray-1;
-  transition: 0.2s;
-}
-
-.c-header-nav {
-  margin-top: myrem(65);
-  @include mq(md) {
-    margin-top: 0;
-  }
+  transition: all 0.5s;
 }
 
 .c-header-nav__list {
