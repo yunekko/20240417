@@ -38,15 +38,23 @@ jQuery(function ($) {
   });
 });
 
-// ハンバーガー
+// // ハンバーガー
 $(function () {
   $(".c-hamburger-button").on("click", function () {
-    $(".c-hamburger-button__line, .c-header-nav__box").toggleClass("open");
+    $(".c-hamburger-button__line, .c-header__nav-box").toggleClass("open");
   });
 });
 
-$(".c-header-nav__link").on("click", function () {
+$(".c-header-nav__item a").on("click", function () {
   $(
-    ".c-header-title, .c-header__sub-title, .c-header-nav__link, .c-hamburger-button__line"
+    ".c-header-title, .c-header__sub-title, .c-header-nav__box, .c-hamburger-button__line"
   ).removeClass("open");
 });
+
+// ハンバーガーメニュー;
+// $(".js-hamburger").click(function () {
+//   $(this).toggleClass("is-active");
+//   // bodyに「.active」class付け外し
+//   $("body").toggleClass("active");
+//   $(".js-drawer").fadeToggle();
+// });

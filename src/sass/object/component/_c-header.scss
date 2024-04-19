@@ -20,7 +20,7 @@
   }
 }
 
-.c-header-title__box {
+.c-header__title-box {
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -40,10 +40,11 @@
   }
 }
 
-.c-header-nav__box {
+.c-header__nav-box {
   display: none;
   position: relative;
   left: -100vw;
+  transition: 0.2s;
   @include mq(md) {
     margin-top: myrem(9);
     display: block;
@@ -51,7 +52,7 @@
   }
 }
 
-.c-header-nav__box.open {
+.c-header__nav-box.open {
   padding-top: myrem(27);
   display: block;
   display: flex;
@@ -64,6 +65,7 @@
   left: 0;
   text-align: center;
   background-color: $gray-1;
+  transition: 0.2s;
 }
 
 .c-header-nav {
