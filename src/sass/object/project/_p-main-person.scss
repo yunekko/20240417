@@ -5,7 +5,13 @@
   margin: 0 auto;
   padding-top: myrem(65);
   max-width: myrem(1040);
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include mq(md) {
+    display: block;
+    position: relative;
+  }
 }
 
 .p-main-person__image {
@@ -15,7 +21,7 @@
     text-align: start;
   }
   img {
-    max-width: myrem(300);
+    max-width: myrem(320);
     width: 100%;
     @include mq(md) {
       max-width: myrem(454);
@@ -28,14 +34,15 @@
   max-width: myrem(320);
   padding: myrem(15);
   position: initial;
-  top: 32%;
+  top: 32.5%;
   left: 40.5%;
   background-color: $white;
   text-align: center;
   @include mq(md) {
     margin: 0;
-    padding: myrem(24) myrem(70) myrem(34);
+    padding: myrem(24) myrem(71) myrem(34);
     max-width: myrem(635);
+    width: 100%;
     position: absolute;
     text-align: start;
   }
@@ -57,4 +64,5 @@
   font-family: $font-jp;
   font-weight: normal;
   line-height: 1.7;
+  text-align: start;
 }

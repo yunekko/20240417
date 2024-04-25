@@ -1,11 +1,15 @@
 @use "global" as *;
 
 // 分野-------------------------------------------------
+.p-service {
+  margin: 0 auto;
+  max-width: myrem(1280);
+  width: 100%;
+}
+
 .p-service__main {
   display: flex;
-  justify-content: center;
   flex-direction: column;
-  column-gap: myrem(80);
   text-align: center;
   @include mq(md) {
     flex-direction: row;
@@ -17,15 +21,14 @@
   max-width: myrem(368);
   margin: myrem(50) auto 0;
   @include mq(md) {
-    margin: myrem(307) 0 0;
+    margin: myrem(307) myrem(70) 0 myrem(50);
   }
 }
 
 .p-service-about {
-  margin-top: myrem(31);
-  margin-bottom: myrem(48);
+  margin: myrem(29) 0 myrem(42) myrem(-1);
   font-size: myrem(14);
-  line-height: 1.8;
+  line-height: 1.9;
   text-align: start;
 }
 
@@ -33,6 +36,8 @@
   padding: myrem(22) myrem(38);
   font-size: myrem(16);
   font-family: $font-sub;
+  font-weight: 700;
+  font-style: normal;
   color: $white;
   background-color: $orange-2;
   border-radius: myrem(50);
@@ -40,42 +45,91 @@
 
 .p-service__image {
   margin: myrem(2) auto 0;
+  width: myrem(120);
   @include mq(md) {
-    margin: myrem(2) 0 0 myrem(27);
+    margin: myrem(4) 0 0 myrem(26);
+    width: myrem(107);
+  }
+}
+
+.p-service__image-second {
+  margin: myrem(7) auto myrem(7);
+  @include mq(md) {
+    margin: myrem(7) 0 0 myrem(26);
+    width: myrem(114);
+  }
+}
+
+.p-service__image-third {
+  margin: myrem(2) auto myrem(18);
+  width: myrem(130);
+  @include mq(md) {
+    margin: myrem(2) 0 0 myrem(18);
+    width: myrem(133);
   }
 }
 
 .p-service__image img {
-  width: myrem(107);
+  aspect-ratio: 107.02/92.52;
+  object-fit: contain;
 }
 
 .p-service-box {
-  width: myrem(330);
+  width: myrem(340);
+}
+
+.p-service-box-third {
+  width: myrem(293);
 }
 
 .p-service__title {
-  margin-top: myrem(15);
-  margin-left: myrem(5);
+  margin: myrem(15) auto myrem(10);
   color: $white;
   font-family: $font-sub;
+  font-weight: 700;
+  font-style: normal;
   font-size: myrem(24);
-  font-weight: bold;
   @include mq(md) {
-    margin-top: 0;
+    margin: 0 0 0 myrem(10);
+  }
+}
+
+.p-service__title-second {
+  margin: myrem(15) auto myrem(10);
+  @include mq(md) {
+    margin: myrem(-4) 0 0 myrem(16);
+  }
+}
+
+.p-service__title-third {
+  margin: myrem(15) auto myrem(10);
+  @include mq(md) {
+    margin: myrem(2) 0 0 myrem(-12);
   }
 }
 
 .p-service__text {
-  margin-top: myrem(25);
-  margin-left: myrem(6);
+  margin: myrem(25) auto 0;
   padding: 0 myrem(10);
   color: $white;
   font-size: myrem(12);
   line-height: 1.8;
+  text-align: start;
   @include mq(md) {
-    margin-top: myrem(4);
+    margin: myrem(6) 0 0 myrem(13);
     padding: 0;
   }
+}
+
+.p-service__text-second {
+  margin-left: 0;
+  @include mq(md) {
+    margin-left: myrem(16);
+  }
+}
+
+.p-service__text-third {
+  margin: myrem(3) 0 0 myrem(-12);
 }
 
 // 業務内容----------------------------------------
@@ -83,29 +137,53 @@
   text-align: start;
 }
 
+.p-service2__image {
+  max-width: myrem(350);
+}
+
+.p-service2__image img {
+  aspect-ratio: 350/272;
+  object-fit: contain;
+}
+
 .p-service2__title {
   margin-top: myrem(13);
   padding-bottom: myrem(7);
   font-size: myrem(34);
   font-family: $font-sub;
-  font-weight: bold;
+  font-weight: 700;
+  font-style: normal;
   color: $blue;
   border-bottom: 1px solid $blue;
 }
 
+.p-service2__title-center {
+  margin-left: myrem(6);
+}
+
 .p-service2__text {
-  margin-top: myrem(12);
-  padding: 0 myrem(1);
+  margin: myrem(13) 0 0 myrem(0);
+  max-width: myrem(347);
+  width: 100%;
   font-size: myrem(12);
   line-height: 1.8;
 }
 
+.p-service2__text-center {
+  margin: myrem(13) 0 0 myrem(6);
+}
+
 .p-service2-more {
-  margin-top: myrem(31);
-  margin-left: myrem(10);
-  padding: myrem(9) myrem(44);
+  max-width: myrem(150);
+  width: 100%;
+  margin: myrem(31) 0 0 0;
+  padding: myrem(10) 0;
   border-radius: 0;
   border: 1px solid $black;
+}
+
+.p-service2-more-center {
+  margin: myrem(31) 0 0 myrem(9);
 }
 
 // 取扱分野ページ
@@ -113,7 +191,7 @@
   position: relative;
   height: myrem(227);
   background-size: cover;
-  background-image: url(/dist/images/service-view.jpg);
+  background-image: url(../images/service-view.jpg);
 }
 
 .p-service-title__top {
@@ -126,6 +204,7 @@
 .p-service-title__bottom {
   font-size: myrem(10);
   @include mq(md) {
+    margin-top: myrem(-2);
     font-size: myrem(14);
   }
 }
@@ -140,13 +219,14 @@
 .p-service-page__person-info {
   margin-top: myrem(110);
   margin-left: 0;
-  padding-bottom: myrem(108);
+  padding-bottom: myrem(60);
   max-width: myrem(812);
   display: flex;
   align-items: center;
   flex-direction: column;
   @include mq(md) {
     margin-left: myrem(-52);
+    padding-bottom: myrem(108);
   }
 }
 
@@ -155,7 +235,7 @@
   padding: myrem(12);
   max-width: myrem(520);
   @include mq(md) {
-    margin: myrem(107) auto 0;
+    margin: myrem(108) auto 0;
     padding: 0 0 0 myrem(47);
   }
 }
@@ -163,15 +243,20 @@
 .p-service-page__person-title {
   font-size: myrem(33);
   font-family: $font-sub;
-  font-weight: bold;
+  font-weight: 700;
+  font-style: normal;
   color: $black-sub;
   line-height: 1.4;
 }
 
 .p-service-page__person-comment {
-  margin-top: myrem(17);
+  margin: myrem(18) 0 0 myrem(2);
   font-size: myrem(16);
-  letter-spacing: myrem(0.4);
+  line-height: 1.4;
+}
+
+.p-service-page__person-comment:last-child {
+  margin-top: myrem(21);
 }
 
 .p-service-page__person-image {
@@ -181,13 +266,20 @@
   transform: translateX(50%);
   @include mq(md) {
     top: myrem(44);
-    right: 26.8%;
+    right: 26.9%;
   }
 }
 
 .p-service-page__person-image img {
-  width: myrem(300);
+  max-width: myrem(320);
   @include mq(md) {
-    width: myrem(491);
+    max-width: myrem(491);
+  }
+}
+
+.p-service-page__information {
+  margin-top: 0;
+  @include mq(md) {
+    margin-top: myrem(-2);
   }
 }

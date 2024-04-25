@@ -3,6 +3,8 @@
 .c-section-title {
   font-size: myrem(25);
   font-family: $font-sub;
+  font-weight: 700;
+  font-style: normal;
   font-weight: bold;
   @include mq(md) {
     font-size: myrem(33);

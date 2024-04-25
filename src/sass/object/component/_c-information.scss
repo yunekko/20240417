@@ -1,17 +1,6 @@
 @use "global" as *;
 
 // 問い合わせ先--------------------------------------------
-.c-information-box {
-  text-align: center;
-  margin: myrem(33) 0 myrem(23);
-  @include mq(md) {
-    margin-top: 0;
-    margin-bottom: 0;
-    position: absolute;
-    top: myrem(20);
-    left: 62%;
-  }
-}
 
 .c-information-catch {
   margin: 0 auto;
@@ -20,6 +9,7 @@
   position: relative;
   @include mq(md) {
     max-width: myrem(500);
+    margin: myrem(2) auto 0;
   }
 }
 
@@ -27,6 +17,8 @@
   max-width: myrem(200);
   font-size: myrem(20);
   font-family: $font-sub;
+  font-weight: 700;
+  font-style: normal;
   @include mq(md) {
     max-width: myrem(389);
     font-size: myrem(26);
@@ -34,6 +26,7 @@
 }
 
 .c-information-catch__image {
+  width: myrem(122);
   position: absolute;
   top: myrem(19);
   right: -9%;
@@ -45,8 +38,8 @@
 }
 
 .c-information-catch__image img {
-  width: myrem(122);
-  height: myrem(165);
+  aspect-ratio: 120.26/163.55;
+  object-fit: contain;
 }
 
 .c-information-boxes {
@@ -56,7 +49,7 @@
   display: flex;
   flex-direction: column;
   row-gap: myrem(20);
-  column-gap: myrem(31);
+  column-gap: myrem(29);
   z-index: 20;
   @include mq(md) {
     flex-direction: row;

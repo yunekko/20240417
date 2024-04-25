@@ -22,16 +22,17 @@
   transform: translateY(-50%);
   @include mq(md) {
     top: 54%;
-    left: myrem(51);
+    left: myrem(50);
   }
 }
 
 .p-main-catch {
   width: fit-content;
-  padding: myrem(3) myrem(12);
+  padding: myrem(4) myrem(11) myrem(1) myrem(14);
   font-size: myrem(18);
   font-family: $font-sub;
-  font-weight: bold;
+  font-weight: 700;
+  font-style: normal;
   background-color: $white;
   @include mq(md) {
     font-size: myrem(38);
@@ -54,7 +55,7 @@
   img {
     width: 85%;
     @include mq(md) {
-      width: 70%;
+      width: 70.1%;
     }
   }
 }

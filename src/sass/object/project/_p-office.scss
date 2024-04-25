@@ -1,12 +1,12 @@
 @use "global" as *;
 
 .p-office {
-  padding-top: myrem(43);
   display: flex;
   justify-content: center;
   flex-direction: column;
   column-gap: myrem(250);
   @include mq(md) {
+    padding-top: myrem(43);
     flex-direction: row;
   }
 }
@@ -20,31 +20,34 @@
 }
 
 .p-office-information__inner {
-  margin-top: 26px;
-  padding-right: 28px;
+  margin: myrem(26) 0 0 myrem(5);
+  padding-right: myrem(28);
 }
 
 .p-office-name {
   font-size: myrem(20);
   font-family: $font-sub;
-  font-weight: bold;
+  font-weight: 700;
+  font-style: normal;
 }
 
 .p-office-address {
-  margin-top: myrem(3);
+  margin-top: myrem(4);
   font-size: myrem(18);
   font-family: $font-jp;
   font-weight: normal;
 }
 
 .p-office-tel {
-  margin-top: myrem(17);
+  margin-top: myrem(16);
   font-size: myrem(18);
   font-family: $font-jp;
   font-weight: normal;
+  letter-spacing: myrem(0.3);
 }
 
 .p-office-fax {
+  margin-top: myrem(3);
   font-size: myrem(18);
   font-family: $font-jp;
   font-weight: normal;

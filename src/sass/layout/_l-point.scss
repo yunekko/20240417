@@ -1,8 +1,0 @@
-@use "global" as *;
-
-.l-point {
-  margin-top: myrem(50);
-  @include mq(md) {
-    margin-top: myrem(194);
-  }
-}

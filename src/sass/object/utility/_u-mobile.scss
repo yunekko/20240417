@@ -1,7 +1,0 @@
-@use "global" as *;
-
-.u-mobile {
-  @include mq(md) {
-    display: none;
-  }
-}

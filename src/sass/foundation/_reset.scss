@@ -57,9 +57,8 @@ a {
 /* Make images easier to work with */
 img,
 picture {
-  width: 100%;
-  height: auto;
-  vertical-align: bottom;
+  max-width: 100%;
+  display: block;
 }
 
 /* Inherit fonts for inputs and buttons */

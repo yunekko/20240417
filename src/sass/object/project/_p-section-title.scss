@@ -1,6 +1,7 @@
 @use "global" as *;
 
 .p-section-title__point {
+  margin-left: myrem(-4);
   text-align: center;
 }
 
@@ -16,8 +17,8 @@
 }
 
 .p-section-title__other-service {
-  margin: myrem(62) auto 0;
-  padding-bottom: myrem(5);
+  margin: myrem(60) auto 0;
+  padding: 0 myrem(12) myrem(5) myrem(7);
   width: fit-content;
   font-size: myrem(20);
   border-bottom: 2px solid $orange;
@@ -25,7 +26,7 @@
 
 .p-section-title__flow {
   margin: 0 auto;
-  padding: myrem(106) myrem(30) myrem(5);
+  padding: myrem(106) myrem(38) myrem(5) myrem(19);
   padding-top: myrem(106);
   width: fit-content;
   font-size: myrem(27);
@@ -39,18 +40,19 @@
   font-size: myrem(24);
   border-bottom: 2px solid $orange;
   @include mq(md) {
-    margin-top: myrem(41);
+    margin: myrem(41) 0 0 myrem(-8);
+    padding: 0 myrem(8);
   }
 }
 
 .p-section-title__office {
   margin: 0 auto;
-  padding: 0 myrem(19);
+  padding: 0 myrem(19) 0 myrem(11);
   width: fit-content;
   font-size: myrem(27);
   border-bottom: 2px solid $orange;
   @include mq(md) {
-    margin: 0 0 0 myrem(-16);
+    margin: 0 0 0 myrem(-6);
   }
 }
 
@@ -65,7 +67,8 @@
   text-align: center;
   border-radius: myrem(5);
   @include mq(md) {
-    padding: myrem(10) myrem(131);
+    margin: myrem(-1) 0 0 myrem(18);
+    padding: myrem(14) myrem(129) myrem(9) myrem(132);
   }
 }
 

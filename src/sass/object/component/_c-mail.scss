@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .c-mail__information-bottom {
-  margin: myrem(7) auto 0;
+  margin: myrem(7) 0 0 myrem(34);
   display: flex;
   align-items: center;
   column-gap: myrem(8);
@@ -11,6 +11,7 @@
 }
 
 .c-mail__information-bottom::before {
+  font-size: myrem(19);
   font-family: bootstrap-icons;
   content: "\F32F";
 }

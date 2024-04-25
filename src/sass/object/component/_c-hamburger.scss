@@ -1,65 +1,40 @@
 @use "global" as *;
 
 .c-hamburger-button {
-  padding: myrem(8);
+  padding: 0 myrem(5);
   width: myrem(50);
   height: myrem(40);
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: $blue;
   border-radius: myrem(5);
   z-index: 50;
+  cursor: pointer;
   @include mq(md) {
     display: none;
   }
 }
 
-.c-hamburger-button:hover {
-  cursor: pointer;
-}
-
-.c-hamburger-button__line {
+.c-hamburger-button span {
   width: 100%;
-  height: myrem(2);
-  display: flex;
+  height: myrem(3);
+  display: block;
   background-color: $white;
   position: relative;
-  transition: 0.2s;
+  transition: 0.3s;
 }
 
-.c-hamburger-button__line::before,
-.c-hamburger-button__line::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: $white;
-  transition: 0.2s;
+.c-hamburger-button span:nth-child(2) {
+  margin: myrem(6) 0;
 }
 
-.c-hamburger-button__line::before {
-  transform: translateY(-10px);
+//ハンバーガーがクリックされた時の動き
+.c-hamburger-button.is-active span:nth-child(1) {
+  transform: translate(0, myrem(8)) rotate(-45deg);
 }
 
-.c-hamburger-button__line::after {
-  transform: translateY(myrem(10));
-}
-
-.c-hamburger-button__line.open {
+.c-hamburger-button.is-active span:nth-child(2) {
   background-color: transparent;
 }
 
-.c-hamburger-button__line.open::before,
-.c-hamburger-button__line.open::after {
-  content: "";
-  transition: 0.2s;
-}
-
-.c-hamburger-button__line.open::before {
-  transform: rotate(45deg);
-}
-
-.c-hamburger-button__line.open::after {
-  transform: rotate(-45deg);
+.c-hamburger-button.is-active span:nth-child(3) {
+  transform: translate(0, myrem(-10)) rotate(45deg);
 }

@@ -1,7 +1,7 @@
 @use "global" as *;
 
 // header-----------------------------------
-.c-header {
+.p-header {
   width: 100%;
   background-color: $white;
   display: flex;
@@ -20,7 +20,7 @@
   }
 }
 
-.c-header__title-box {
+.p-header__title-box {
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -29,35 +29,18 @@
   }
 }
 
-.c-header__title {
+.p-header__title {
   font-size: myrem(16);
   color: $blue;
   font-family: $font-jp;
   font-weight: normal;
   @include mq(md) {
-    margin-top: myrem(23);
-    margin-left: myrem(17);
+    margin: myrem(23) 0 0 myrem(17);
   }
 }
 
-.c-header__nav-box {
-  position: absolute;
-  top: myrem(80);
-  left: -100vw;
-  transition: all 0.5s;
-  @include mq(md) {
-    margin-top: myrem(9);
-    display: block;
-    position: initial;
-  }
-}
-
-.c-header__nav-box.open {
-  display: block;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.p-header__nav-box {
+  display: none;
   position: fixed;
   width: 100vw;
   height: 90vh;
@@ -65,10 +48,25 @@
   left: 0;
   text-align: center;
   background-color: $gray-1;
-  transition: all 0.5s;
+  overflow: auto;
+
+  @include mq(md) {
+    margin-top: myrem(9);
+    height: inherit;
+    display: block;
+    position: initial;
+    background-color: $white;
+  }
 }
 
-.c-header-nav__list {
+.p-header-nav {
+  margin-top: myrem(90);
+  @include mq(md) {
+    margin-top: 0;
+  }
+}
+
+.p-header-nav__list {
   display: flex;
   flex-direction: column;
   row-gap: myrem(23);
@@ -78,14 +76,32 @@
   }
 }
 
-.c-header__sub-title {
+.p-header__sub-title {
   font-size: myrem(32);
   color: $blue;
   font-family: $font-jp;
   font-weight: normal;
 }
 
-.c-header-nav__item {
+.p-header-nav__item {
   font-size: myrem(14);
   font-weight: bold;
+}
+
+.p-header__information {
+  margin: myrem(33) auto myrem(23);
+  width: myrem(240);
+  text-align: center;
+  @include mq(md) {
+    margin: 0;
+    position: absolute;
+    top: myrem(20);
+    left: 62%;
+  }
+}
+
+/* ハンバーガーメニュー展開時、背景を固定 */
+body.active {
+  height: 100%;
+  overflow: hidden;
 }

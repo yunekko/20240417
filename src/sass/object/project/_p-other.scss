@@ -2,29 +2,59 @@
 
 // その他分野---------------------------------------------
 .p-other-service__image {
+  margin: myrem(-19) 0 0 myrem(10);
+  width: myrem(200);
   display: flex;
   align-items: center;
+  @include mq(md) {
+    margin: myrem(-19) 0 0 myrem(-5);
+    width: myrem(259);
+  }
+}
+
+.p-other-service__image-second {
+  margin: myrem(2) 0 0 myrem(8);
+  width: myrem(293);
+  @include mq(md) {
+    margin: myrem(2) 0 0 myrem(-8);
+    width: myrem(371);
+  }
+}
+
+.p-other-service__image-third {
+  margin: myrem(5) 0 0 myrem(4);
+  width: myrem(223);
+  @include mq(md) {
+    margin: myrem(5) 0 0 myrem(3);
+    width: myrem(281);
+  }
 }
 
 .p-other-service__image img {
-  width: myrem(96);
+  aspect-ratio: 96.08/120.62;
+  object-fit: contain;
 }
 
-.p-other-service__image-lg img {
-  width: myrem(134);
+.p-other-service__image-second img {
+  aspect-ratio: 143.36/88.07;
 }
 
 .p-other-service-box {
-  margin-top: myrem(7);
-  margin-left: myrem(24);
+  margin: myrem(7) 0 0 myrem(24);
 }
 
 .p-other-service-box__center {
-  margin-left: myrem(-18);
+  margin: myrem(3) 0 0 myrem(-18);
+}
+
+.p-other-service-box-third {
+  margin: myrem(4) 0 0 myrem(20);
 }
 
 .p-other-service__title {
   font-family: $font-sub;
+  font-weight: 700;
+  font-style: normal;
   font-size: myrem(18);
   color: $blue;
 }
@@ -35,10 +65,59 @@
   line-height: 1.8;
 }
 
-.p-other-service-box2 {
-  margin-left: myrem(33);
+// サービスページ　その他の分野
+
+.p-other-service2__image {
+  width: myrem(370);
+  margin-top: myrem(-18);
 }
 
-.p-other-service-box__center2 {
-  margin-left: myrem(-3);
+.p-other-service2__image-second {
+  width: myrem(352);
+  margin: myrem(-8) auto 0;
+  @include mq(md) {
+    width: myrem(360);
+    margin: myrem(-4) 0 0 myrem(-4);
+  }
+}
+
+.p-other-service2__image-third {
+  width: myrem(282);
+  margin: myrem(7) 0 0 myrem(-5);
+  @include mq(md) {
+    margin: myrem(-2) 0 0 myrem(5);
+  }
+}
+
+.p-other-service2-box {
+  margin: myrem(8) 0 0 myrem(20);
+  @include mq(md) {
+    margin: myrem(24) 0 0 myrem(27);
+  }
+}
+
+.p-other-service2-box-second {
+  margin: myrem(25) 0 0 myrem(-16);
+  @include mq(md) {
+    margin: myrem(25) 0 0 myrem(-11);
+  }
+}
+
+.p-other-service2-box-third {
+  margin: myrem(13) 0 0 myrem(26);
+  @include mq(md) {
+    margin: myrem(22) 0 0 myrem(35);
+  }
+}
+
+.p-other-service2__text {
+  margin-top: myrem(9);
+}
+
+.p-other-service2__text-second {
+  margin-top: myrem(14);
+}
+
+.p-other-service2__text-third {
+  margin-top: myrem(16);
 }

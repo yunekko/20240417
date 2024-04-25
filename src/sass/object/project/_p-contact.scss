@@ -1,13 +1,14 @@
 @use "global" as *;
 
 .p-contact__button {
+  margin: 0 auto;
   width: myrem(201);
   display: inline-block;
   display: flex;
   align-items: center;
   justify-content: center;
-  column-gap: myrem(13);
-  padding: myrem(12) myrem(41) myrem(13);
+  column-gap: myrem(9);
+  padding: myrem(13) myrem(38) myrem(11);
   border-radius: myrem(5);
   font-size: myrem(14);
   font-weight: bold;
@@ -21,7 +22,8 @@
 }
 
 .p-contact__button::before {
-  font-size: myrem(17);
+  width: myrem(25);
+  font-size: myrem(18);
   color: $white;
   font-family: bootstrap-icons;
   content: "\F32F";

@@ -15,17 +15,16 @@
 }
 
 .p-notice-box {
-  margin-top: 30px;
+  margin-top: myrem(30);
   @include mq(md) {
-    margin-top: 0;
-    margin-left: myrem(80);
+    margin: 0 0 0 myrem(72);
     border-left: 1px solid $black;
   }
 }
 
 .p-notice__list {
   @include mq(md) {
-    margin-left: myrem(63);
+    margin-left: myrem(69);
   }
 }
 
@@ -34,7 +33,7 @@
   display: flex;
   column-gap: myrem(24);
   @include mq(md) {
-    margin-bottom: myrem(13);
+    margin: 0 0 myrem(12.5) myrem(-7);
   }
 }
 
@@ -45,13 +44,14 @@
 }
 
 .p-notice__text {
+  margin-left: myrem(1);
   font-size: myrem(14);
   font-family: $font-jp;
   font-weight: normal;
 }
 
 .p-notice-more {
-  margin-left: myrem(19);
+  margin-left: myrem(12);
   position: relative;
   font-size: myrem(14);
   font-family: $font-jp;

@@ -1,9 +1,28 @@
 @use "global" as *;
 
-.l-service {
-  padding: 0 myrem(15) myrem(77);
+.l-service-page__main-view {
+  margin-top: myrem(30);
 }
 
-.l-service-view {
-  margin-top: myrem(30);
+.l-service-page__main-service {
+  margin-top: myrem(94);
+  padding: 0 myrem(10);
+  @include mq(md) {
+    padding: 0;
+  }
+}
+
+.l-service-page__fee {
+  margin-top: myrem(91);
+  padding-bottom: myrem(100);
+  @include mq(md) {
+    padding-bottom: myrem(167);
+  }
+}
+
+.l-service-page__information {
+  padding-bottom: myrem(50);
+  @include mq(md) {
+    padding-bottom: myrem(53);
+  }
 }

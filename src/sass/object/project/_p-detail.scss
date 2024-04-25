@@ -1,17 +1,19 @@
 @use "global" as *;
 
 .p-detail__button {
+  width: myrem(140);
   display: inline-block;
   font-family: $font-sub;
+  font-weight: 700;
+  font-style: normal;
   font-size: myrem(12);
   color: $black-sub;
   background-color: $white;
   border-radius: myrem(50);
-  margin-top: myrem(25);
-  margin-right: myrem(9);
-  padding: myrem(9) myrem(20);
+  margin: myrem(25) myrem(13) 0 0;
+  padding: myrem(8.5) myrem(10) myrem(8.5) myrem(22);
   @include mq(md) {
-    margin-top: myrem(5);
+    margin-top: 0;
   }
 }
 

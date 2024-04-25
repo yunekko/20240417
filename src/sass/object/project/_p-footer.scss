@@ -1,7 +1,7 @@
 @use "global" as *;
 
 // フッター----------------------------------------------
-.c-footer {
+.p-footer {
   padding-bottom: myrem(50);
   font-family: $font-jp;
   color: $white;
@@ -9,28 +9,27 @@
   text-align: center;
 }
 
-.c-footer-top {
-  padding-top: myrem(47);
-  padding-left: myrem(18);
+.p-footer-top {
+  padding: myrem(44) 0 0 myrem(18);
 }
 
-.c-footer-top__title,
-.c-footer-top__sub-title {
+.p-footer-top__title,
+.p-footer-top__sub-title {
   font-size: myrem(16);
   font-weight: normal;
 }
 
-.c-footer-top__sub-title {
+.p-footer-top__sub-title {
   margin-top: myrem(5);
 }
 
-.c-footer-nav {
-  margin-top: myrem(26);
+.p-footer-nav {
+  margin-top: myrem(27);
   font-size: myrem(12);
   font-weight: normal;
 }
 
-.c-footer-nav__list {
+.p-footer-nav__list {
   margin: 0 myrem(1) 0;
   display: flex;
   justify-content: center;
@@ -43,13 +42,13 @@
   }
 }
 
-.c-footer-bottom {
+.p-footer-bottom {
   margin-top: myrem(33);
   display: flex;
   align-items: center;
   justify-content: center;
   column-gap: myrem(11);
   @include mq(md) {
-    margin-left: -27px;
+    margin-left: myrem(-27);
   }
 }

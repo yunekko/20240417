@@ -14,8 +14,11 @@
     <!-- ogp -->
     <meta property="og:title" content="ベリーナイス法律事務所" />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="" />
-    <meta property="og:image" content="" />
+    <meta property="og:url" content="https://xs589126.xsrv.jp/" />
+    <meta
+      property="og:image"
+      content="https://xs589126.xsrv.jp/images/man.jpg"
+    />
     <meta property="og:site_name" content="ベリーナイス法律事務所" />
     <meta
       property="og:description"
@@ -37,40 +40,74 @@
     />
     <!-- css -->
     <link rel="stylesheet" href="./css/styles.css" />
+    <!-- adobe font -->
+    <script>
+      (function (d) {
+        var config = {
+            kitId: "gni8ejw",
+            scriptTimeout: 3000,
+            async: true,
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != "complete" && a != "loaded")) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
+      })(document);
+    </script>
   </head>
   <body>
-    <header class="l-header c-header">
-      <div class="c-header__title-box">
-        <h1 class="c-header__title"><a href="#">ベリーナイス法律事務所</a></h1>
-        <h2 class="c-header__sub-title"><a href="#">橋下冬馬弁護士</a></h2>
+    <header class="l-header p-header">
+      <div class="p-header__title-box">
+        <h1 class="p-header__title"><a href="#">ベリーナイス法律事務所</a></h1>
+        <h2 class="p-header__sub-title"><a href="#">橋下冬馬弁護士</a></h2>
       </div>
       <button class="c-hamburger-button">
-        <span class="c-hamburger-button__line"></span>
+        <span></span>
+        <span></span>
+        <span></span>
       </button>
-      <div class="c-header__nav-box">
-        <nav class="c-header-nav">
-          <ul class="c-header-nav__list">
-            <li class="c-header-nav__item">
+      <div class="p-header__nav-box js-drawer">
+        <nav class="p-header-nav">
+          <ul class="p-header-nav__list">
+            <li class="p-header-nav__item">
               <a href="#">ホーム</a>
             </li>
-            <li class="c-header-nav__item">
-              <a href="./service.html">取扱分野</a>
+            <li class="p-header-nav__item">
+              <a href="#l-top-page__service">取扱分野</a>
             </li>
-            <li class="c-header-nav__item">
-              <a href="#">弁護士紹介</a>
+            <li class="p-header-nav__item">
+              <a href="#l-top-page__main-person">弁護士紹介</a>
             </li>
-            <li class="c-header-nav__item">
-              <a href="#">弁護士業務</a>
+            <li class="p-header-nav__item">
+              <a href="service.html#l-service-page__fee">弁護士費用</a>
             </li>
-            <li class="c-header-nav__item">
-              <a href="#">事務所のご案内</a>
+            <li class="p-header-nav__item">
+              <a href="#l-top-page__office">事務所のご案内</a>
             </li>
-            <li class="c-header-nav__item">
-              <a href="#">お知らせ</a>
+            <li class="p-header-nav__item">
+              <a href="#l-top-page__notice">お知らせ</a>
             </li>
           </ul>
         </nav>
-        <div class="c-information-box">
+        <div class="p-header__information">
           <p class="c-tel">01-2345-6789</p>
           <p class="l-opening-time c-opening-time">
             受付時間 10:00〜20:00 土日祝休み
@@ -98,7 +135,7 @@
         </div>
       </section>
       <!-- ポイント -->
-      <section class="l-point">
+      <section class="l-top-page__point">
         <h3 class="c-section-title p-section-title__point">
           お客様を笑顔にする3つの特徴
         </h3>
@@ -114,13 +151,19 @@
         <div class="l-bg-gray__0 c-bg-gray__0">
           <div class="c-cards p-cards__point">
             <div class="c-card p-card__point">
-              <span class="p-card-top__title">POINT</span>
-              <span class="p-card-top__number">01</span>
+              <span class="p-card-top__title p-card-top__title-first"
+                >POINT</span
+              >
+              <span class="p-card-top__number p-card-top__number-first"
+                >01</span
+              >
               <div class="c-card__image p-point__icon">
                 <img src="./images/point-1.png" alt="男女のアイコン" />
               </div>
-              <p class="c-card__title p-point__title">相談しやすい環境</p>
-              <p class="c-card__text p-point__text">
+              <p class="c-card__title p-point__title p-point__title-first">
+                相談しやすい環境
+              </p>
+              <p class="c-card__text p-point__text p-point__text-first">
                 アットホームにお待ちしています。どのようなことでもかまいません。どんなことでもご相談ください。
               </p>
             </div>
@@ -145,7 +188,7 @@
                 ひとりひとりのお悩みに<br />
                 ぴったり寄り添いサポートします。
               </p>
-              <p class="c-card__text p-point__text">
+              <p class="c-card__text p-point__text p-point__text-last">
                 相談者と一緒に悩み、一緒に考える。相談者にぴったり寄り添い、細やかにサポートします。
               </p>
             </div>
@@ -153,16 +196,20 @@
         </div>
       </section>
       <!-- 分野 -->
-      <section class="l-service">
+      <section id="l-top-page__service" class="l-top-page__service p-service">
         <div class="p-service__main">
           <div class="p-service-title__area">
             <h3 class="c-section-title p-section-title__service">
               主な取り扱い分野
             </h3>
             <p class="p-service-about">
-              「こんなこと弁護士に相談していいのかな」，「この相談は法律に関係するのだろうか」そんなふうに迷わないで下さい。法律問題かどうかは一般の方にはなかなかわからないものです。困ったことがあったら，まずはお気軽にお電話下さい。
+              「こんなこと弁護士に相談していいのかな」 ,
+              「この相談は法律に関係するのだろうか」そんなふうに迷わないで下さい。法律問題かどうかは一般の方にはなかなかわからないものです。困ったことがあったら
+              , まずはお気軽にお電話下さい。
             </p>
-            <a class="p-service-more" href="#">主な取り扱い分野を詳しく見る</a>
+            <a class="p-service-more" href="./service.html"
+              >主な取り扱い分野を詳しく見る</a
+            >
           </div>
           <div class="c-cards p-cards__service">
             <div class="c-card p-card__service">
@@ -183,15 +230,21 @@
               ></a>
             </div>
             <div class="c-card p-card__service">
-              <div class="c-card__image p-service__image">
+              <div
+                class="c-card__image p-service__image p-service__image-second"
+              >
                 <img
                   src="./images/service-2.png"
                   alt="男女が悩んでいるアイコン"
                 />
               </div>
               <div class="p-service-box">
-                <p class="c-card__title p-service__title">離婚・男女問題</p>
-                <p class="c-card__text p-service__text">
+                <p
+                  class="c-card__title p-service__title p-service__title-second"
+                >
+                  離婚・男女問題
+                </p>
+                <p class="c-card__text p-service__text p-service__text-second">
                   限られた人生の中で、離婚するべきか否か、時間が解決してくれることはあまり期待できません。離婚に際して取り決めるべきことは多岐にわたります。大切な問題であるからこそ、専門家に一度ご相談することをおすすめします。
                 </p>
               </div>
@@ -200,15 +253,21 @@
               ></a>
             </div>
             <div class="c-card p-card__service">
-              <div class="c-card__image p-service__image">
+              <div
+                class="c-card__image p-service__image p-service__image-third"
+              >
                 <img
                   src="./images/service-3.png"
                   alt="中年男性が資料に書き込んでいるアイコン"
                 />
               </div>
-              <div class="p-service-box">
-                <p class="c-card__title p-service__title">遺産相続・遺言書</p>
-                <p class="c-card__text p-service__text">
+              <div class="p-service-box p-service-box-third">
+                <p
+                  class="c-card__title p-service__title p-service__title-third"
+                >
+                  遺産相続・遺言書
+                </p>
+                <p class="c-card__text p-service__text p-service__text-third">
                   「自分の家族は大丈夫」そう思って、きちんとした遺言書を残さなかったからこそ残された家族の間で争いは起きています。大切な財産を巡って大切な家族がバラバラになってしまうことを避けるために、専門家による遺言書を作成しましょう。
                 </p>
               </div>
@@ -236,9 +295,11 @@
               </p>
             </div>
           </div>
-          <div class="c-card p-card__other-service">
+          <div
+            class="c-card p-card__other-service p-card__other-service-center"
+          >
             <div
-              class="c-card__image p-other-service__image p-other-service__image-lg"
+              class="c-card__image p-other-service__image p-other-service__image-second"
             >
               <img
                 src="./images/service-5.png"
@@ -253,10 +314,12 @@
             </div>
           </div>
           <div class="c-card p-card__other-service">
-            <div class="c-card__image p-other-service__image">
+            <div
+              class="c-card__image p-other-service__image p-other-service__image-third"
+            >
               <img src="./images/service-6.png" alt="お札のアイコン" />
             </div>
-            <div class="p-other-service-box">
+            <div class="p-other-service-box p-other-service-box-third">
               <p class="c-card__title p-other-service__title">借金・債務整理</p>
               <p class="c-card__text p-other-service__text">
                 ダミーのテキストダミーのテキストダミーのテキストダミーのテキストダミーの
@@ -266,58 +329,71 @@
         </div>
       </section>
       <!-- フローチャート -->
-      <section class="l-flow p-flow">
+      <section class="l-top-page__flow p-flow">
         <h3 class="c-section-title p-section-title__flow">ご依頼の流れ</h3>
         <div class="p-flows">
           <ol class="p-flow__list">
             <li class="p-flow__item">
-              <p class="p-flow__number">01</p>
-              <div class="p-flow__image p-flow__image-sm">
-                <img src="./images/flow-1.png" alt="スマートフォンのアイコン" />
+              <p class="p-flow__number p-flow__number-1">01</p>
+              <div class="p-flow__thumbnail">
+                <div class="p-flow__image p-flow__image-sm">
+                  <img
+                    src="./images/flow-1.png"
+                    alt="スマートフォンのアイコン"
+                  />
+                </div>
               </div>
-              <p class="p-flow__title">ご相談・予約</p>
-              <p class="p-flow__text">
+              <p class="p-flow__title p-flow__title-1">ご相談・予約</p>
+              <p class="p-flow__text p-flow__text-1">
                 まずはお気軽にご連絡ください。ご相談の概要をお聞きした上で、ご相談日を決めさせていただきます。
               </p>
             </li>
-            <li class="p-flow__sign"></li>
-            <li class="p-flow__item">
-              <p class="p-flow__number">02</p>
-              <div class="p-flow__image">
-                <img src="./images/flow-2.png" alt="鉛筆とノートのアイコン" />
+            <li class="p-flow__sign p-flow__sign-1"></li>
+            <li class="p-flow__item p-flow__item-2">
+              <p class="p-flow__number p-flow__number-2">02</p>
+              <div class="p-flow__thumbnail">
+                <div class="p-flow__image">
+                  <img src="./images/flow-2.png" alt="鉛筆とノートのアイコン" />
+                </div>
               </div>
-              <p class="p-flow__title">ご面談</p>
-              <p class="p-flow__text">
+              <p class="p-flow__title p-flow__title-2">ご面談</p>
+              <p class="p-flow__text p-flow__text-2">
                 トラブルの状況や経緯について、詳しくお聞かせください。当事務所でご相談をお受けさせていただきます。
               </p>
             </li>
-            <li class="p-flow__sign"></li>
-            <li class="p-flow__item">
-              <p class="p-flow__number">03</p>
-              <div class="p-flow__image">
-                <img src="./images/flow-3.png" alt="カレンダーのアイコン" />
+            <li class="p-flow__sign p-flow__sign-2"></li>
+            <li class="p-flow__item p-flow__item-3">
+              <p class="p-flow__number p-flow__number-3">03</p>
+              <div class="p-flow__thumbnail">
+                <div class="p-flow__image">
+                  <img src="./images/flow-3.png" alt="カレンダーのアイコン" />
+                </div>
               </div>
-              <p class="p-flow__title">ご検討</p>
-              <p class="p-flow__text">
+              <p class="p-flow__title p-flow__title-3">ご検討</p>
+              <p class="p-flow__text p-flow__text-3">
                 ご相談の結果、弁護士の関与が必要と判断した場合には、処理の方針や費用などのご説明をさせていただきます。
               </p>
             </li>
-            <li class="p-flow__sign"></li>
+            <li class="p-flow__sign p-flow__item-4"></li>
             <li class="p-flow__item">
-              <p class="p-flow__number">04</p>
-              <div class="p-flow__image">
-                <img src="./images/flow-4.png" alt="書類のアイコン" />
+              <p class="p-flow__number p-flow__number-4">04</p>
+              <div class="p-flow__thumbnail">
+                <div class="p-flow__image">
+                  <img src="./images/flow-4.png" alt="書類のアイコン" />
+                </div>
               </div>
-              <p class="p-flow__title">ご依頼</p>
-              <p class="p-flow__text">
+              <p class="p-flow__title p-flow__title-4">ご依頼</p>
+              <p class="p-flow__text p-flow__text-4">
                 提案にご納得いただけましたら、ご契約後、問題解決へと進めていきます。
               </p>
             </li>
             <li class="p-flow__sign"></li>
-            <li class="p-flow__item">
+            <li class="p-flow__item p-flow__item-5">
               <p class="p-flow__number">05</p>
-              <div class="p-flow__image">
-                <img src="./images/flow-5.png" alt="ノートのアイコン" />
+              <div class="p-flow__thumbnail">
+                <div class="p-flow__image">
+                  <img src="./images/flow-5.png" alt="ノートのアイコン" />
+                </div>
               </div>
               <p class="p-flow__title">解決</p>
               <p class="p-flow__text">
@@ -328,7 +404,10 @@
         </div>
       </section>
       <!-- 弁護士紹介 -->
-      <section class="l-main-person c-bg-gray__0">
+      <section
+        id="l-top-page__main-person"
+        class="l-top-page__main-person c-bg-gray__0"
+      >
         <div class="p-main-person__introduce">
           <div class="p-main-person__image">
             <img
@@ -348,7 +427,7 @@
         </div>
       </section>
       <!-- お知らせ -->
-      <section class="l-notice">
+      <section id="l-top-page__notice" class="l-top-page__notice">
         <div class="p-notice">
           <h3 class="c-section-title p-section-title__notice">お知らせ</h3>
           <div class="p-notice-box">
@@ -377,7 +456,7 @@
         </div>
       </section>
       <!-- 問い合わせ先 -->
-      <section class="l-information c-bg-gray__0">
+      <section class="l-top-page__information c-bg-gray__0">
         <div class="c-information-catch">
           <h3 class="c-information-catch__text">
             初回60分のご相談は無料です。<br />
@@ -406,7 +485,7 @@
         </div>
       </section>
       <!-- 事務所の案内 -->
-      <section class="l-office p-office">
+      <section id="l-top-page__office" class="l-top-page__office p-office">
         <div class="p-office-information">
           <h3 class="c-section-title p-section-title__office">
             事務所のご案内
@@ -416,8 +495,8 @@
             <p class="p-office-address">
               〒105-0011<br />東京都港区芝公園４丁目２−８
             </p>
-            <p class="p-office-tel">Tel : (01)2345-6789</p>
-            <p class="p-office-fax">Fax : (01)2345-6789</p>
+            <p class="p-office-tel">Tel：(01)2345-6789</p>
+            <p class="p-office-fax">Fax：(01)2345-6789</p>
           </div>
         </div>
 
@@ -435,31 +514,31 @@
       </section>
     </main>
     <!-- フッター -->
-    <footer class="c-footer">
-      <div class="c-footer-top">
-        <p class="c-footer-top__title">ベリーナイス法律事務所</p>
-        <p class="c-footer-top__sub-title">橋下冬馬弁護士</p>
+    <footer class="p-footer">
+      <div class="p-footer-top">
+        <p class="p-footer-top__title">ベリーナイス法律事務所</p>
+        <p class="p-footer-top__sub-title">橋下冬馬弁護士</p>
       </div>
-      <nav class="c-footer-nav">
-        <ul class="c-footer-nav__list">
-          <li class="c-footer-nav__item">
-            <a class="c-footer-nav__link" href="#">よくある質問</a>
+      <nav class="p-footer-nav">
+        <ul class="p-footer-nav__list">
+          <li class="p-footer-nav__item">
+            <a class="p-footer-nav__link" href="#">よくある質問</a>
           </li>
-          <li class="c-footer-nav__item">
-            <a class="c-footer-nav__link" href="#">お客様の声</a>
+          <li class="p-footer-nav__item">
+            <a class="p-footer-nav__link" href="#">お客様の声</a>
           </li>
-          <li class="c-footer-nav__item">
-            <a class="c-footer-nav__link" href="#">お問い合わせ</a>
+          <li class="p-footer-nav__item">
+            <a class="p-footer-nav__link" href="#">お問い合わせ</a>
           </li>
-          <li class="c-footer-nav__item">
-            <a class="c-footer-nav__link" href="#">プライバシーポリシー</a>
+          <li class="p-footer-nav__item">
+            <a class="p-footer-nav__link" href="#">プライバシーポリシー</a>
           </li>
-          <li class="c-footer-nav__item">
-            <a class="c-footer-nav__link" href="#">サイトマップ</a>
+          <li class="p-footer-nav__item">
+            <a class="p-footer-nav__link" href="#">サイトマップ</a>
           </li>
         </ul>
       </nav>
-      <div class="c-footer-bottom">
+      <div class="p-footer-bottom">
         <a href="#"
           ><div class="c-twitter">
             <i class="bi bi-twitter c-twitter__inner"></i></div

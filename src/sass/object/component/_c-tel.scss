@@ -1,6 +1,7 @@
 @use "global" as *;
 
 .c-tel {
+  margin-left: myrem(-2);
   display: flex;
   align-items: center;
   column-gap: myrem(4);
@@ -16,7 +17,8 @@
 }
 
 .c-tel__information-bottom {
-  margin: 0 auto;
+  margin-left: myrem(39);
   font-size: myrem(28);
   font-weight: bold;
+  letter-spacing: myrem(0.1);
 }

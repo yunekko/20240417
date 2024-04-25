@@ -4,17 +4,17 @@
   margin-top: myrem(45);
   padding: 0 myrem(23);
   font-size: myrem(14);
+  line-height: 1.6;
   text-align: start;
   @include mq(md) {
-    margin-top: myrem(16);
+    margin: myrem(13) 0 0 myrem(-4);
     padding: 0;
     text-align: center;
   }
 }
 
 .p-point__image {
-  margin-top: myrem(45);
-  margin-bottom: myrem(13);
+  margin: myrem(45) 0 myrem(13);
   @include mq(md) {
     margin-top: myrem(92);
   }
@@ -22,31 +22,51 @@
 
 .p-point__icon {
   margin-top: myrem(61);
-}
-
-.p-point__icon img {
   width: myrem(74);
 }
 
-.p-point__icon-lg img {
+.p-point__icon-lg {
+  margin-top: myrem(63);
   width: myrem(88);
+}
+
+.p-point__icon img {
+  object-fit: contain;
+  aspect-ratio: 74.11/61.4;
+}
+
+.p-point__icon-lg img {
+  aspect-ratio: 85.97/54.56;
+}
+
+.p-point__title-first {
+  margin-left: myrem(-4);
 }
 
 .p-point__title {
   margin-top: myrem(23);
   font-family: $font-sub;
+  font-weight: 700;
+  font-style: normal;
   font-weight: bold;
   font-size: myrem(16);
   text-align: center;
 }
 
 .p-point__title-lg {
-  margin-top: myrem(32);
+  margin-top: myrem(29);
 }
 
 .p-point__text {
-  margin-top: myrem(6);
-  padding: 0 myrem(31) myrem(21);
+  padding: myrem(6) myrem(36) 0;
   font-size: myrem(12);
   line-height: 1.8;
+}
+
+.p-point__text-first {
+  padding: myrem(6) myrem(49) 0;
+}
+
+.p-point__text-last {
+  padding: myrem(8) myrem(28) myrem(20);
 }
