@@ -45,3 +45,9 @@ $(".c-hamburger-button").click(function () {
   $("body").toggleClass("active");
   $(".js-drawer").fadeToggle();
 });
+
+$(".p-header-nav__item a").click(function () {
+  $(".c-hamburger-button").removeClass("is-active");
+  $("body").removeClass("active");
+  $(".js-drawer").fadeToggle();
+});
