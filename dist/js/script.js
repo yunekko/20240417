@@ -46,8 +46,10 @@ $(".c-hamburger-button").click(function () {
   $(".js-drawer").fadeToggle();
 });
 
-$(".p-header-nav__item a").click(function () {
-  $(".c-hamburger-button").removeClass("is-active");
-  $("body").removeClass("active");
-  $(".js-drawer").fadeToggle();
-});
+if (window.matchMedia("(max-width: 768px)").matches) {
+  $(".p-header-nav__item a").click(function () {
+    $(".c-hamburger-button").removeClass("is-active");
+    $("body").removeClass("active");
+    $(".js-drawer").fadeToggle();
+  });
+}
