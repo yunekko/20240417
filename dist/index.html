@@ -74,7 +74,7 @@
     </script>
   </head>
   <body>
-    <header class="l-header p-header">
+    <header class="p-header l-header">
       <div class="p-header__title-box">
         <h1 class="p-header__title"><a href="#">ベリーナイス法律事務所</a></h1>
         <h2 class="p-header__sub-title"><a href="#">橋下冬馬弁護士</a></h2>
@@ -84,7 +84,7 @@
         <span></span>
         <span></span>
       </button>
-      <div class="p-header__nav-box js-drawer">
+      <div class="p-header-nav__box js-drawer">
         <nav class="p-header-nav">
           <ul class="p-header-nav__list">
             <li class="p-header-nav__item">
@@ -108,25 +108,24 @@
           </ul>
         </nav>
         <div class="p-header__information">
-          <p class="c-tel">01-2345-6789</p>
-          <p class="l-opening-time c-opening-time">
-            受付時間 10:00〜20:00 土日祝休み
-          </p>
+          <p class="p-header__tel">01-2345-6789</p>
+          <p class="p-header__opening-time">受付時間 10:00〜20:00 土日祝休み</p>
         </div>
-        <a class="p-contact__button" href="#">お問い合わせ</a>
+        <a class="p-header__contact-button" href="#">お問い合わせ</a>
       </div>
     </header>
+    <!-- メインビュー -->
     <main>
       <section class="p-main-view">
         <div class="p-main-view__box">
-          <div class="p-main-catch__box">
-            <h3 class="p-main-catch">気楽に相談できる</h3>
-            <h3 class="p-main-catch">仲間のようなパートナーとして</h3>
-            <p class="p-main-text">
+          <div class="p-main-view__catch-box">
+            <h3 class="p-main-view__catch">気楽に相談できる</h3>
+            <h3 class="p-main-view__catch">仲間のようなパートナーとして</h3>
+            <p class="p-main-view__text">
               ダミーのテキストダミーのテキストダミーのテキストダミーのテキストダミーのテキストダミーのテキストダミーのテキスト
             </p>
           </div>
-          <div class="p-main-image">
+          <div class="p-main-view__image">
             <img
               src="./images/main-view.jpg"
               alt="スーツを着た成人男性が面談をしている"
@@ -136,7 +135,7 @@
       </section>
       <!-- ポイント -->
       <section class="l-top-page__point">
-        <h3 class="c-section-title p-section-title__point">
+        <h3 class="c-section-title p-point__section-title">
           お客様を笑顔にする3つの特徴
         </h3>
         <p class="p-point__comment">
@@ -148,47 +147,47 @@
           <img src="./images/feature.png" alt="" />
         </div>
 
-        <div class="l-bg-gray__0 c-bg-gray__0">
-          <div class="c-cards p-cards__point">
-            <div class="c-card p-card__point">
-              <span class="p-card-top__title p-card-top__title-first"
+        <div class="c-bg-gray__0 l-bg-gray__0">
+          <div class="p-point__cards">
+            <div class="p-point__card">
+              <span class="p-point__card-top-title p-point__card-top-title1"
                 >POINT</span
               >
-              <span class="p-card-top__number p-card-top__number-first"
+              <span class="p-point__card-top-number p-point__card-top-number1"
                 >01</span
               >
-              <div class="c-card__image p-point__icon">
+              <div class="p-point__card-icon">
                 <img src="./images/point-1.png" alt="男女のアイコン" />
               </div>
-              <p class="c-card__title p-point__title p-point__title-first">
+              <p class="p-point__card-title p-point__card-title1">
                 相談しやすい環境
               </p>
-              <p class="c-card__text p-point__text p-point__text-first">
+              <p class="p-point__card-text p-point__card-text1">
                 アットホームにお待ちしています。どのようなことでもかまいません。どんなことでもご相談ください。
               </p>
             </div>
-            <div class="c-card p-card__point">
-              <span class="p-card-top__title">POINT</span>
-              <span class="p-card-top__number">02</span>
-              <div class="c-card__image p-point__icon">
+            <div class="p-point__card">
+              <span class="p-point__card-top-title">POINT</span>
+              <span class="p-point__card-top-number">02</span>
+              <div class="p-point__card-icon">
                 <img src="./images/point-2.png" alt="家家のアイコン" />
               </div>
-              <p class="c-card__title p-point__title">個人から法人まで</p>
-              <p class="c-card__text p-point__text">
+              <p class="p-point__card-title">個人から法人まで</p>
+              <p class="p-point__card-text">
                 商店街の個人事業主様から上場企業様まで、お客様は多岐にわたります。業種や規模が違うお客様のご要望にお答えします
               </p>
             </div>
-            <div class="c-card p-card__point">
-              <span class="p-card-top__title">POINT</span>
-              <span class="p-card-top__number">03</span>
-              <div class="c-card__image p-point__icon p-point__icon-lg">
+            <div class="p-point__card">
+              <span class="p-point__card-top-title">POINT</span>
+              <span class="p-point__card-top-number">03</span>
+              <div class="p-point__card-icon p-point__card-icon-lg">
                 <img src="./images/point-3.png" alt="握手するアイコン" />
               </div>
-              <p class="c-card__title p-point__title p-point__title-lg">
+              <p class="p-point__card-title p-point__card-title-long">
                 ひとりひとりのお悩みに<br />
                 ぴったり寄り添いサポートします。
               </p>
-              <p class="c-card__text p-point__text p-point__text-last">
+              <p class="p-point__card-text p-point__card-text3">
                 相談者と一緒に悩み、一緒に考える。相談者にぴったり寄り添い、細やかにサポートします。
               </p>
             </div>
@@ -196,132 +195,131 @@
         </div>
       </section>
       <!-- 分野 -->
-      <section id="l-top-page__service" class="l-top-page__service p-service">
-        <div class="p-service__main">
-          <div class="p-service-title__area">
-            <h3 class="c-section-title p-section-title__service">
+      <section
+        id="l-top-page__service"
+        class="p-main-service l-top-page__service"
+      >
+        <div class="p-main-service__box">
+          <div class="p-main-service__title-area">
+            <h3 class="c-section-title p-main-service__title">
               主な取り扱い分野
             </h3>
-            <p class="p-service-about">
+            <p class="p-main-service__about">
               「こんなこと弁護士に相談していいのかな」 ,
               「この相談は法律に関係するのだろうか」そんなふうに迷わないで下さい。法律問題かどうかは一般の方にはなかなかわからないものです。困ったことがあったら
               , まずはお気軽にお電話下さい。
             </p>
-            <a class="p-service-more" href="./service.html"
+            <a class="p-main-service__more" href="./service.html"
               >主な取り扱い分野を詳しく見る</a
             >
           </div>
-          <div class="c-cards p-cards__service">
-            <div class="c-card p-card__service">
-              <div class="c-card__image p-service__image">
+          <div class="p-main-service__cards">
+            <div class="p-main-service__card">
+              <div class="p-main-service__image">
                 <img
                   src="./images/service-1.png"
                   alt="男女が車に乗っているアイコン"
                 />
               </div>
-              <div class="p-service-box">
-                <p class="c-card__title p-service__title">交通事故</p>
-                <p class="c-card__text p-service__text">
+              <div class="p-main-service__description">
+                <p class="p-main-service__description-title">交通事故</p>
+                <p class="p-main-service__description-text">
                   不幸にも被害に遭われてしまった場合、現在の生活やその後の生活に支障が生じてしまいます。その被害を回復するためには、適切な賠償金を受け取らなければなりません。保険会社は、当初から適切な賠償金額の提示をするケースは多くはありません。
                 </p>
               </div>
-              <a class="p-detail__button" href="#"
-                >詳しくはこちら<span class="p-arrow-right"></span
+              <a class="p-detail-button" href="#"
+                >詳しくはこちら<span class="p-detail-button__arrow-right"></span
               ></a>
             </div>
-            <div class="c-card p-card__service">
-              <div
-                class="c-card__image p-service__image p-service__image-second"
-              >
+            <div class="p-main-service__card">
+              <div class="p-main-service__image p-main-service__image-second">
                 <img
                   src="./images/service-2.png"
                   alt="男女が悩んでいるアイコン"
                 />
               </div>
-              <div class="p-service-box">
+              <div class="p-main-service__description">
                 <p
-                  class="c-card__title p-service__title p-service__title-second"
+                  class="__title p-main-service__description-title p-main-service__description-title2"
                 >
                   離婚・男女問題
                 </p>
-                <p class="c-card__text p-service__text p-service__text-second">
+                <p
+                  class="__text p-main-service__description-text p-main-service__description-text2"
+                >
                   限られた人生の中で、離婚するべきか否か、時間が解決してくれることはあまり期待できません。離婚に際して取り決めるべきことは多岐にわたります。大切な問題であるからこそ、専門家に一度ご相談することをおすすめします。
                 </p>
               </div>
-              <a class="p-detail__button" href="#"
-                >詳しくはこちら<span class="p-arrow-right"></span
+              <a class="p-detail-button" href="#"
+                >詳しくはこちら<span class="p-detail-button__arrow-right"></span
               ></a>
             </div>
-            <div class="c-card p-card__service">
-              <div
-                class="c-card__image p-service__image p-service__image-third"
-              >
+            <div class="p-main-service__card">
+              <div class="p-main-service__image p-main-service__image-third">
                 <img
                   src="./images/service-3.png"
                   alt="中年男性が資料に書き込んでいるアイコン"
                 />
               </div>
-              <div class="p-service-box p-service-box-third">
+              <div
+                class="p-main-service__description p-main-service__description-third"
+              >
                 <p
-                  class="c-card__title p-service__title p-service__title-third"
+                  class="__title p-main-service__description-title p-main-service__description-title3"
                 >
                   遺産相続・遺言書
                 </p>
-                <p class="c-card__text p-service__text p-service__text-third">
+                <p
+                  class="__text p-main-service__description-text p-main-service__description-text3"
+                >
                   「自分の家族は大丈夫」そう思って、きちんとした遺言書を残さなかったからこそ残された家族の間で争いは起きています。大切な財産を巡って大切な家族がバラバラになってしまうことを避けるために、専門家による遺言書を作成しましょう。
                 </p>
               </div>
-              <a class="p-detail__button" href="#"
-                >詳しくはこちら<span class="p-arrow-right"></span
+              <a class="p-detail-button" href="#"
+                >詳しくはこちら<span class="p-detail-button__arrow-right"></span
               ></a>
             </div>
           </div>
         </div>
 
         <!-- その他分野 -->
-        <h3 class="c-section-title p-section-title__other-service">
+        <h3 class="c-section-title p-other-service__title">
           その他の取り扱い分野
         </h3>
 
-        <div class="c-cards p-cards__other-service">
-          <div class="c-card p-card__other-service">
-            <div class="c-card__image p-other-service__image">
+        <div class="p-other-service__cards">
+          <div class="p-other-service__card">
+            <div class="p-other-service__image">
               <img src="./images/service-4.png" alt="疲弊した女性のアイコン" />
             </div>
-            <div class="p-other-service-box">
-              <p class="c-card__title p-other-service__title">不貞慰謝料</p>
-              <p class="c-card__text p-other-service__text">
+            <div class="p-other-service__box">
+              <p class="p-other-service__box-title">不貞慰謝料</p>
+              <p class="p-other-service__box-text">
                 ダミーのテキストダミーのテキストダミーのテキストダミーのテキストダミーの
               </p>
             </div>
           </div>
-          <div
-            class="c-card p-card__other-service p-card__other-service-center"
-          >
-            <div
-              class="c-card__image p-other-service__image p-other-service__image-second"
-            >
+          <div class="p-other-service__card p-other-service__card-center">
+            <div class="p-other-service__image p-other-service__image-second">
               <img
                 src="./images/service-5.png"
                 alt="這いつくばっている男性のアイコン"
               />
             </div>
-            <div class="p-other-service-box p-other-service-box__center">
-              <p class="c-card__title p-other-service__title">犯罪・刑事事件</p>
-              <p class="c-card__text p-other-service__text">
+            <div class="p-other-service__box p-other-service__box-center">
+              <p class="p-other-service__box-title">犯罪・刑事事件</p>
+              <p class="p-other-service__box-text">
                 ダミーのテキストダミーのテキストダミーのテキストダミーのテキストダミーの
               </p>
             </div>
           </div>
-          <div class="c-card p-card__other-service">
-            <div
-              class="c-card__image p-other-service__image p-other-service__image-third"
-            >
+          <div class="p-other-service__card">
+            <div class="p-other-service__image p-other-service__image-third">
               <img src="./images/service-6.png" alt="お札のアイコン" />
             </div>
-            <div class="p-other-service-box p-other-service-box-third">
-              <p class="c-card__title p-other-service__title">借金・債務整理</p>
-              <p class="c-card__text p-other-service__text">
+            <div class="p-other-service__box p-other-service__box-third">
+              <p class="p-other-service__box-title">借金・債務整理</p>
+              <p class="p-other-service__box-text">
                 ダミーのテキストダミーのテキストダミーのテキストダミーのテキストダミーの
               </p>
             </div>
@@ -329,8 +327,8 @@
         </div>
       </section>
       <!-- フローチャート -->
-      <section class="l-top-page__flow p-flow">
-        <h3 class="c-section-title p-section-title__flow">ご依頼の流れ</h3>
+      <section class="p-flow l-top-page__flow">
+        <h3 class="c-section-title p-flow__section-title">ご依頼の流れ</h3>
         <div class="p-flows">
           <ol class="p-flow__list">
             <li class="p-flow__item">
@@ -406,7 +404,7 @@
       <!-- 弁護士紹介 -->
       <section
         id="l-top-page__main-person"
-        class="l-top-page__main-person c-bg-gray__0"
+        class="c-bg-gray__0 l-top-page__main-person"
       >
         <div class="p-main-person__introduce">
           <div class="p-main-person__image">
@@ -422,14 +420,14 @@
             <p class="p-main-person__comment">
               当事務所の離婚相談は、初回、1時間まで無料。ご相談のみでもご満足いただけるよう、「具体的に何ができるのか」というゴールの設定と、「そのためにはどうしたら良いのか、何をすべきなのか」がわかる道筋をお示しいたします。ご相談のみをご希望される方もお気軽にお問合せください。
             </p>
-            <a class="p-detail__button2" href="#">詳しく見る</a>
+            <a class="p-detail-button2" href="#">詳しく見る</a>
           </div>
         </div>
       </section>
       <!-- お知らせ -->
       <section id="l-top-page__notice" class="l-top-page__notice">
         <div class="p-notice">
-          <h3 class="c-section-title p-section-title__notice">お知らせ</h3>
+          <h3 class="c-section-title p-notice__title">お知らせ</h3>
           <div class="p-notice-box">
             <ul class="p-notice__list">
               <li class="p-notice__item">
@@ -449,14 +447,14 @@
                 </p>
               </li>
               <li>
-                <a class="p-notice-more" href="#">お知らせをもっと見る</a>
+                <a class="p-notice__more" href="#">お知らせをもっと見る</a>
               </li>
             </ul>
           </div>
         </div>
       </section>
       <!-- 問い合わせ先 -->
-      <section class="l-top-page__information c-bg-gray__0">
+      <section class="c-bg-gray__0 l-top-page__information">
         <div class="c-information-catch">
           <h3 class="c-information-catch__text">
             初回60分のご相談は無料です。<br />
@@ -471,23 +469,23 @@
         </div>
         <div class="c-information-boxes">
           <div class="c-information-box__bottom">
-            <p class="c-opening-time c-opening-time__information-bottom">
+            <p class="c-information-box__opening-time">
               受付時間 10:00〜20:00 土日祝休み
             </p>
-            <p class="c-tel c-tel__information-bottom">01-2345-6789</p>
+            <p class="c-information-box__tel">01-2345-6789</p>
           </div>
           <div class="c-information-box__bottom">
-            <p class="c-comment__information-bottom">
+            <p class="c-information-box__comment">
               24時間お問い合わせを受け付けております
             </p>
-            <p class="c-mail__information-bottom">メールでのお問い合わせ</p>
+            <p class="c-information-box__mail">メールでのお問い合わせ</p>
           </div>
         </div>
       </section>
       <!-- 事務所の案内 -->
-      <section id="l-top-page__office" class="l-top-page__office p-office">
+      <section id="l-top-page__office" class="p-office l-top-page__office">
         <div class="p-office-information">
-          <h3 class="c-section-title p-section-title__office">
+          <h3 class="c-section-title p-office-information__title">
             事務所のご案内
           </h3>
           <div class="p-office-information__inner">
@@ -540,12 +538,12 @@
       </nav>
       <div class="p-footer-bottom">
         <a href="#"
-          ><div class="c-twitter">
-            <i class="bi bi-twitter c-twitter__inner"></i></div
+          ><div class="p-footer-bottom__twitter">
+            <i class="bi bi-twitter p-footer-bottom__twitter-inner"></i></div
         ></a>
         <a href="#">
-          <div class="c-line">
-            <i class="bi bi-line c-line__inner"></i></div
+          <div class="p-footer-bottom__line">
+            <i class="bi bi-line p-footer-bottom__line-inner"></i></div
         ></a>
       </div>
     </footer>

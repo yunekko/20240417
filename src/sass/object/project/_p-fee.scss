@@ -1,5 +1,12 @@
 @use "global" as *;
 
+.p-fee__title {
+  margin: 0 auto;
+  padding: 0 myrem(10);
+  width: fit-content;
+  border-bottom: 2px solid $orange;
+}
+
 .p-fee__about {
   margin: myrem(75) auto 0;
   padding: 0 myrem(15);

@@ -52,3 +52,33 @@
     margin-left: myrem(-27);
   }
 }
+
+.p-footer-bottom__twitter {
+  width: myrem(39);
+  height: myrem(39);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: $blue;
+  background-color: $white;
+}
+
+.p-footer-bottom__twitter-inner {
+  font-size: myrem(18);
+}
+
+.p-footer-bottom__line {
+  width: myrem(39);
+  height: myrem(39);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: $white;
+  background-color: $blue;
+}
+
+.p-footer-bottom__line-inner {
+  font-size: myrem(40);
+}

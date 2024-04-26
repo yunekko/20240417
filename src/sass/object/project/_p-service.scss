@@ -1,152 +1,93 @@
 @use "global" as *;
 
-// 分野-------------------------------------------------
-.p-service {
-  margin: 0 auto;
-  max-width: myrem(1280);
-  width: 100%;
+// 取扱分野ページ
+.p-service-view {
+  position: relative;
+  height: myrem(227);
+  background-size: cover;
+  background-image: url(../images/service-view.jpg);
 }
 
-.p-service__main {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  @include mq(md) {
-    flex-direction: row;
-    text-align: start;
-  }
-}
-
-.p-service-title__area {
-  max-width: myrem(368);
-  margin: myrem(50) auto 0;
-  @include mq(md) {
-    margin: myrem(307) myrem(70) 0 myrem(50);
-  }
-}
-
-.p-service-about {
-  margin: myrem(29) 0 myrem(42) myrem(-1);
-  font-size: myrem(14);
-  line-height: 1.9;
-  text-align: start;
-}
-
-.p-service-more {
-  padding: myrem(22) myrem(38);
-  font-size: myrem(16);
-  font-family: $font-sub;
-  font-weight: 700;
-  font-style: normal;
+.p-service-view__title {
+  padding: myrem(10) myrem(50);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: $white;
-  background-color: $orange-2;
-  border-radius: myrem(50);
-}
-
-.p-service__image {
-  margin: myrem(2) auto 0;
-  width: myrem(120);
+  background-color: $blue;
+  text-align: center;
+  border-radius: myrem(5);
   @include mq(md) {
-    margin: myrem(4) 0 0 myrem(26);
-    width: myrem(107);
+    margin: myrem(-1) 0 0 myrem(18);
+    padding: myrem(14) myrem(129) myrem(9) myrem(132);
   }
 }
 
-.p-service__image-second {
-  margin: myrem(7) auto myrem(7);
+.p-service-view__title-top {
+  font-size: myrem(15);
   @include mq(md) {
-    margin: myrem(7) 0 0 myrem(26);
-    width: myrem(114);
+    font-size: myrem(22);
   }
 }
 
-.p-service__image-third {
-  margin: myrem(2) auto myrem(18);
-  width: myrem(130);
+.p-service-view__title-bottom {
+  font-size: myrem(10);
   @include mq(md) {
-    margin: myrem(2) 0 0 myrem(18);
-    width: myrem(133);
+    margin-top: myrem(-2);
+    font-size: myrem(14);
   }
 }
 
-.p-service__image img {
-  aspect-ratio: 107.02/92.52;
-  object-fit: contain;
-}
-
-.p-service-box {
-  width: myrem(340);
-}
-
-.p-service-box-third {
-  width: myrem(293);
-}
+// 業務内容----------------------------------------
 
 .p-service__title {
-  margin: myrem(15) auto myrem(10);
-  color: $white;
-  font-family: $font-sub;
-  font-weight: 700;
-  font-style: normal;
-  font-size: myrem(24);
-  @include mq(md) {
-    margin: 0 0 0 myrem(10);
-  }
-}
-
-.p-service__title-second {
-  margin: myrem(15) auto myrem(10);
-  @include mq(md) {
-    margin: myrem(-4) 0 0 myrem(16);
-  }
-}
-
-.p-service__title-third {
-  margin: myrem(15) auto myrem(10);
-  @include mq(md) {
-    margin: myrem(2) 0 0 myrem(-12);
-  }
-}
-
-.p-service__text {
-  margin: myrem(25) auto 0;
+  margin: 0 auto;
   padding: 0 myrem(10);
-  color: $white;
-  font-size: myrem(12);
-  line-height: 1.8;
-  text-align: start;
+  width: fit-content;
+  border-bottom: 2px solid $orange;
+}
+
+.p-service__cards {
+  margin-top: myrem(84);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: myrem(40);
   @include mq(md) {
-    margin: myrem(6) 0 0 myrem(13);
+    flex-direction: row;
+    align-items: start;
+  }
+}
+
+.p-service__card {
+  padding: myrem(5);
+  width: myrem(350);
+  text-align: center;
+  @include mq(md) {
     padding: 0;
   }
 }
 
-.p-service__text-second {
-  margin-left: 0;
-  @include mq(md) {
-    margin-left: myrem(16);
-  }
+.p-service__card-center {
+  margin: 0 myrem(36) 0 myrem(25);
 }
 
-.p-service__text-third {
-  margin: myrem(3) 0 0 myrem(-12);
-}
-
-// 業務内容----------------------------------------
-.p-service2-box {
-  text-align: start;
-}
-
-.p-service2__image {
+.p-service__image {
   max-width: myrem(350);
 }
 
-.p-service2__image img {
+.p-service__image img {
   aspect-ratio: 350/272;
   object-fit: contain;
 }
 
-.p-service2__title {
+.p-service__box {
+  text-align: start;
+}
+
+.p-service__box-title {
   margin-top: myrem(13);
   padding-bottom: myrem(7);
   font-size: myrem(34);
@@ -157,11 +98,11 @@
   border-bottom: 1px solid $blue;
 }
 
-.p-service2__title-center {
+.p-service__box-title-center {
   margin-left: myrem(6);
 }
 
-.p-service2__text {
+.p-service__box-text {
   margin: myrem(13) 0 0 myrem(0);
   max-width: myrem(347);
   width: 100%;
@@ -169,11 +110,61 @@
   line-height: 1.8;
 }
 
-.p-service2__text-center {
+.p-service__box-text-center {
   margin: myrem(13) 0 0 myrem(6);
 }
 
-.p-service2-more {
+.p-service__cases {
+  margin-top: myrem(16);
+  padding: myrem(14) myrem(10) myrem(11);
+  max-width: myrem(350);
+  width: 100%;
+  background-color: $blue-sub;
+  text-align: start;
+  @include mq(md) {
+    padding: myrem(14) myrem(17) myrem(11);
+  }
+}
+
+.p-service__cases-center {
+  margin-left: myrem(5);
+}
+
+.p-service__case-title {
+  margin: myrem(-2) 0 myrem(5) 0;
+  font-size: myrem(14);
+  font-family: $font-sub;
+  font-weight: 700;
+  font-style: normal;
+  color: $blue;
+}
+
+.p-service__case-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: myrem(16);
+}
+
+.p-service__case-item {
+  font-size: myrem(12);
+  font-family: $font-sub;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.p-service__case-item::before {
+  content: "";
+  width: myrem(3);
+  height: myrem(3);
+  margin-right: myrem(5);
+  position: relative;
+  top: myrem(-1);
+  display: inline-block;
+  background-color: $black;
+  border-radius: 50%;
+}
+
+.p-service__more {
   max-width: myrem(150);
   width: 100%;
   margin: myrem(31) 0 0 0;
@@ -182,100 +173,11 @@
   border: 1px solid $black;
 }
 
-.p-service2-more-center {
+.p-service__more-center {
   margin: myrem(31) 0 0 myrem(9);
 }
 
-// 取扱分野ページ
-.p-service-view {
-  position: relative;
-  height: myrem(227);
-  background-size: cover;
-  background-image: url(../images/service-view.jpg);
-}
-
-.p-service-title__top {
-  font-size: myrem(15);
-  @include mq(md) {
-    font-size: myrem(22);
-  }
-}
-
-.p-service-title__bottom {
-  font-size: myrem(10);
-  @include mq(md) {
-    margin-top: myrem(-2);
-    font-size: myrem(14);
-  }
-}
-
-// 弁護士コメント
-.p-service-page__person-introduce {
-  margin: 0 auto;
-  max-width: myrem(1280);
-  position: relative;
-}
-
-.p-service-page__person-info {
-  margin-top: myrem(110);
-  margin-left: 0;
-  padding-bottom: myrem(60);
-  max-width: myrem(812);
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  @include mq(md) {
-    margin-left: myrem(-52);
-    padding-bottom: myrem(108);
-  }
-}
-
-.p-service-page__info-box {
-  margin: myrem(300) auto 0;
-  padding: myrem(12);
-  max-width: myrem(520);
-  @include mq(md) {
-    margin: myrem(108) auto 0;
-    padding: 0 0 0 myrem(47);
-  }
-}
-
-.p-service-page__person-title {
-  font-size: myrem(33);
-  font-family: $font-sub;
-  font-weight: 700;
-  font-style: normal;
-  color: $black-sub;
-  line-height: 1.4;
-}
-
-.p-service-page__person-comment {
-  margin: myrem(18) 0 0 myrem(2);
-  font-size: myrem(16);
-  line-height: 1.4;
-}
-
-.p-service-page__person-comment:last-child {
-  margin-top: myrem(21);
-}
-
-.p-service-page__person-image {
-  position: absolute;
-  top: myrem(44);
-  right: 50%;
-  transform: translateX(50%);
-  @include mq(md) {
-    top: myrem(44);
-    right: 26.9%;
-  }
-}
-
-.p-service-page__person-image img {
-  max-width: myrem(320);
-  @include mq(md) {
-    max-width: myrem(491);
-  }
-}
+// 問い合わせ先
 
 .p-service-page__information {
   margin-top: 0;

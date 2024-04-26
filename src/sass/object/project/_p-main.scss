@@ -1,5 +1,187 @@
 @use "global" as *;
 
+// top page 分野
+
+.p-main-service {
+  margin: 0 auto;
+  max-width: myrem(1280);
+  width: 100%;
+}
+
+.p-main-service__box {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  @include mq(md) {
+    flex-direction: row;
+    text-align: start;
+  }
+}
+
+.p-main-service__title-area {
+  max-width: myrem(368);
+  margin: myrem(50) auto 0;
+  @include mq(md) {
+    margin: myrem(307) myrem(70) 0 myrem(50);
+  }
+}
+
+.p-main-service__title {
+  margin: 0 auto;
+  padding-bottom: myrem(5);
+  width: fit-content;
+  font-size: myrem(27);
+  border-bottom: 2px solid $orange;
+  @include mq(md) {
+    margin: 0;
+  }
+}
+
+.p-main-service__about {
+  margin: myrem(29) 0 myrem(42) myrem(-1);
+  font-size: myrem(14);
+  line-height: 1.9;
+  text-align: start;
+}
+
+.p-main-service__more {
+  padding: myrem(22) myrem(38);
+  font-size: myrem(16);
+  font-family: $font-sub;
+  font-weight: 700;
+  font-style: normal;
+  color: $white;
+  background-color: $orange-2;
+  border-radius: myrem(50);
+}
+
+.p-main-service__cards {
+  margin-top: myrem(120);
+  display: flex;
+  flex-direction: column;
+  row-gap: myrem(31);
+}
+
+.p-main-service__card {
+  margin: 0 auto;
+  padding: myrem(24) myrem(11) myrem(26) myrem(18);
+  max-width: myrem(400);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  column-gap: myrem(22);
+  background-color: $blue-1;
+  border-radius: myrem(5);
+  @include mq(md) {
+    margin: 0;
+    max-width: myrem(705);
+    flex-direction: row;
+  }
+}
+
+.p-main-service__card:nth-child(2) {
+  padding: myrem(37) myrem(16) myrem(37) myrem(17);
+  background-color: $blue-2;
+}
+
+.p-main-service__card:nth-child(3) {
+  padding: myrem(24) myrem(7) myrem(27) myrem(9);
+  background-color: $blue-3;
+}
+
+.p-main-service__image {
+  margin: myrem(2) auto 0;
+  width: myrem(120);
+  @include mq(md) {
+    margin: myrem(4) 0 0 myrem(26);
+    width: myrem(107);
+  }
+}
+
+.p-main-service__image-second {
+  margin: myrem(7) auto myrem(7);
+  @include mq(md) {
+    margin: myrem(7) 0 0 myrem(26);
+    width: myrem(114);
+  }
+}
+
+.p-main-service__image-third {
+  margin: myrem(2) auto myrem(18);
+  width: myrem(130);
+  @include mq(md) {
+    margin: myrem(2) 0 0 myrem(18);
+    width: myrem(133);
+  }
+}
+
+.p-main-service__image img {
+  aspect-ratio: 107.02/92.52;
+  object-fit: contain;
+}
+
+.p-main-service__description {
+  width: myrem(340);
+}
+
+.p-main-service__description-third {
+  width: myrem(293);
+}
+
+.p-main-service__description-title {
+  margin: myrem(15) auto myrem(10);
+  color: $white;
+  font-family: $font-sub;
+  font-weight: 700;
+  font-style: normal;
+  font-size: myrem(24);
+  @include mq(md) {
+    margin: 0 0 0 myrem(10);
+  }
+}
+
+.p-main-service__description-title2 {
+  margin: myrem(15) auto myrem(10);
+  @include mq(md) {
+    margin: myrem(-4) 0 0 myrem(16);
+  }
+}
+
+.p-main-service__description-title3 {
+  margin: myrem(15) auto myrem(10);
+  @include mq(md) {
+    margin: myrem(2) 0 0 myrem(-12);
+  }
+}
+
+.p-main-service__description-text {
+  margin: myrem(25) auto 0;
+  padding: 0 myrem(10);
+  color: $white;
+  font-size: myrem(12);
+  line-height: 1.8;
+  text-align: start;
+  @include mq(md) {
+    margin: myrem(6) 0 0 myrem(13);
+    padding: 0;
+  }
+}
+
+.p-main-service__description-text2 {
+  margin-left: 0;
+  @include mq(md) {
+    margin-left: myrem(16);
+  }
+}
+
+.p-main-service__description-text3 {
+  margin: myrem(3) 0 0 myrem(-12);
+}
+
+// メインビュー
+
 .p-main-view {
   margin-top: myrem(81);
   background-color: $blue-sub;
@@ -12,7 +194,7 @@
   position: relative;
 }
 
-.p-main-catch__box {
+.p-main-view__catch-box {
   display: flex;
   flex-direction: column;
   row-gap: myrem(13);
@@ -26,7 +208,7 @@
   }
 }
 
-.p-main-catch {
+.p-main-view__catch {
   width: fit-content;
   padding: myrem(4) myrem(11) myrem(1) myrem(14);
   font-size: myrem(18);
@@ -39,7 +221,7 @@
   }
 }
 
-.p-main-text {
+.p-main-view__text {
   max-width: myrem(317);
   font-size: myrem(10);
   font-weight: normal;
@@ -49,7 +231,7 @@
   }
 }
 
-.p-main-image {
+.p-main-view__image {
   display: flex;
   justify-content: end;
   img {

@@ -39,7 +39,7 @@
   }
 }
 
-.p-header__nav-box {
+.p-header-nav__box {
   display: none;
   position: fixed;
   width: 100vw;
@@ -98,6 +98,60 @@
     top: myrem(20);
     left: 62%;
   }
+}
+
+.p-header__tel {
+  margin-left: myrem(-2);
+  display: flex;
+  align-items: center;
+  column-gap: myrem(4);
+  font-size: myrem(29);
+  font-family: $font-futura;
+  letter-spacing: myrem(1.2);
+}
+
+.p-header__tel::before {
+  font-size: myrem(23);
+  font-family: bootstrap-icons;
+  content: "\F5B4";
+}
+
+.p-header__opening-time {
+  margin-top: myrem(-6);
+  margin-left: myrem(-8);
+  font-size: myrem(11);
+  font-family: $font-jp;
+  font-weight: normal;
+  letter-spacing: myrem(1.3);
+}
+
+.p-header__contact-button {
+  margin: 0 auto;
+  width: myrem(201);
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: myrem(9);
+  padding: myrem(13) myrem(38) myrem(11);
+  border-radius: myrem(5);
+  font-size: myrem(14);
+  font-weight: bold;
+  color: $white;
+  background-color: $blue;
+  @include mq(md) {
+    position: absolute;
+    top: myrem(26);
+    left: 82%;
+  }
+}
+
+.p-header__contact-button::before {
+  width: myrem(25);
+  font-size: myrem(18);
+  color: $white;
+  font-family: bootstrap-icons;
+  content: "\F32F";
 }
 
 /* ハンバーガーメニュー展開時、背景を固定 */

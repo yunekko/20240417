@@ -1,6 +1,48 @@
 @use "global" as *;
 
 // その他分野---------------------------------------------
+.p-other-service__title {
+  margin: myrem(60) auto 0;
+  padding: 0 myrem(12) myrem(5) myrem(7);
+  width: fit-content;
+  font-size: myrem(20);
+  border-bottom: 2px solid $orange;
+}
+
+.p-other-service__cards {
+  margin-top: myrem(70);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: myrem(30);
+  @include mq(md) {
+    margin: myrem(39) 0 0 myrem(-6);
+    flex-direction: row;
+  }
+}
+
+.p-other-service__card {
+  margin: 0 auto;
+  max-width: myrem(400);
+  width: 100%;
+  padding: myrem(25) myrem(10);
+  display: flex;
+  box-shadow: 0 0 myrem(5) myrem(2) rgba(0, 0, 0, 0.1);
+  border-radius: myrem(5);
+  @include mq(md) {
+    margin: 0;
+    max-width: myrem(365);
+    padding: myrem(35) myrem(45) myrem(33) myrem(42);
+  }
+}
+
+.p-other-service__card-center {
+  margin: 0 auto;
+  @include mq(md) {
+    margin: 0 myrem(23) 0 myrem(28);
+  }
+}
+
 .p-other-service__image {
   margin: myrem(-19) 0 0 myrem(10);
   width: myrem(200);
@@ -39,19 +81,19 @@
   aspect-ratio: 143.36/88.07;
 }
 
-.p-other-service-box {
+.p-other-service__box {
   margin: myrem(7) 0 0 myrem(24);
 }
 
-.p-other-service-box__center {
+.p-other-service__box-center {
   margin: myrem(3) 0 0 myrem(-18);
 }
 
-.p-other-service-box-third {
+.p-other-service__box-third {
   margin: myrem(4) 0 0 myrem(20);
 }
 
-.p-other-service__title {
+.p-other-service__box-title {
   font-family: $font-sub;
   font-weight: 700;
   font-style: normal;
@@ -59,13 +101,35 @@
   color: $blue;
 }
 
-.p-other-service__text {
+.p-other-service__box-text {
   margin-top: myrem(16);
   font-size: myrem(12);
   line-height: 1.8;
 }
 
 // サービスページ　その他の分野
+.p-other-service2__cards {
+  margin-top: myrem(75);
+}
+
+.p-other-service2__card {
+  padding: myrem(15) myrem(25);
+  max-width: myrem(320);
+  width: 100%;
+  @include mq(md) {
+    max-width: myrem(353);
+    padding: myrem(17) myrem(35) myrem(13) myrem(39);
+  }
+}
+
+.p-other-service2__card-center {
+  margin: 0 auto;
+  padding: myrem(2) myrem(18);
+  @include mq(md) {
+    margin: 0 myrem(21) 0 myrem(28);
+    padding: myrem(17) myrem(35) myrem(7) myrem(39);
+  }
+}
 
 .p-other-service2__image {
   width: myrem(370);
@@ -89,35 +153,35 @@
   }
 }
 
-.p-other-service2-box {
+.p-other-service2__box {
   margin: myrem(8) 0 0 myrem(20);
   @include mq(md) {
     margin: myrem(24) 0 0 myrem(27);
   }
 }
 
-.p-other-service2-box-second {
+.p-other-service2__box-second {
   margin: myrem(25) 0 0 myrem(-16);
   @include mq(md) {
     margin: myrem(25) 0 0 myrem(-11);
   }
 }
 
-.p-other-service2-box-third {
+.p-other-service2__box-third {
   margin: myrem(13) 0 0 myrem(26);
   @include mq(md) {
     margin: myrem(22) 0 0 myrem(35);
   }
 }
 
-.p-other-service2__text {
+.p-other-service2__box-text {
   margin-top: myrem(9);
 }
 
-.p-other-service2__text-second {
+.p-other-service2__box-text-second {
   margin-top: myrem(14);
 }
 
-.p-other-service2__text-third {
+.p-other-service2__box-text-third {
   margin-top: myrem(16);
 }

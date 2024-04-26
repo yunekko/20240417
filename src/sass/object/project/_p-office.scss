@@ -19,6 +19,17 @@
   }
 }
 
+.p-office-information__title {
+  margin: 0 auto;
+  padding: 0 myrem(19) 0 myrem(11);
+  width: fit-content;
+  font-size: myrem(27);
+  border-bottom: 2px solid $orange;
+  @include mq(md) {
+    margin: 0 0 0 myrem(-6);
+  }
+}
+
 .p-office-information__inner {
   margin: myrem(26) 0 0 myrem(5);
   padding-right: myrem(28);

@@ -1,5 +1,10 @@
 @use "global" as *;
 
+.p-point__section-title {
+  margin-left: myrem(-4);
+  text-align: center;
+}
+
 .p-point__comment {
   margin-top: myrem(45);
   padding: 0 myrem(23);
@@ -20,30 +25,68 @@
   }
 }
 
-.p-point__icon {
+.p-point__cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  column-gap: myrem(51);
+  @include mq(md) {
+    flex-direction: row;
+  }
+}
+
+.p-point__card {
+  max-width: myrem(320);
+  width: 100%;
+  margin: myrem(89) auto 0;
+  padding: 0 0 myrem(40);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $white;
+  border: 1px solid #dddddd;
+  @include mq(md) {
+    margin: myrem(87) 0 0;
+    padding: 0;
+  }
+}
+
+.p-point__card-top-title {
+  position: absolute;
+  top: myrem(-26);
+  font-family: $font-roboto;
+  font-weight: bold;
+  font-size: myrem(15);
+}
+
+.p-point__card-top-title1 {
+  margin-left: myrem(-6);
+}
+
+.p-point__card-top-number {
+  position: absolute;
+  top: myrem(-22);
+  font-family: $font-roboto;
+  font-weight: bold;
+  font-size: myrem(49);
+}
+
+.p-point__card-top-number1 {
+  margin-left: myrem(-6);
+}
+
+.p-point__card-icon {
   margin-top: myrem(61);
   width: myrem(74);
 }
 
-.p-point__icon-lg {
+.p-point__card-icon-lg {
   margin-top: myrem(63);
   width: myrem(88);
 }
 
-.p-point__icon img {
-  object-fit: contain;
-  aspect-ratio: 74.11/61.4;
-}
-
-.p-point__icon-lg img {
-  aspect-ratio: 85.97/54.56;
-}
-
-.p-point__title-first {
-  margin-left: myrem(-4);
-}
-
-.p-point__title {
+.p-point__card-title {
   margin-top: myrem(23);
   font-family: $font-sub;
   font-weight: 700;
@@ -53,20 +96,24 @@
   text-align: center;
 }
 
-.p-point__title-lg {
+.p-point__card-title1 {
+  margin-left: myrem(-4);
+}
+
+.p-point__card-title-long {
   margin-top: myrem(29);
 }
 
-.p-point__text {
+.p-point__card-text {
   padding: myrem(6) myrem(36) 0;
   font-size: myrem(12);
   line-height: 1.8;
 }
 
-.p-point__text-first {
+.p-point__card-text1 {
   padding: myrem(6) myrem(49) 0;
 }
 
-.p-point__text-last {
+.p-point__card-text3 {
   padding: myrem(8) myrem(28) myrem(20);
 }
