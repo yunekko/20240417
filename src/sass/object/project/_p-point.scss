@@ -26,20 +26,21 @@
 }
 
 .p-point__cards {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  column-gap: myrem(51);
+  margin: 0 auto;
+  max-width: myrem(1113);
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  row-gap: myrem(75);
   @include mq(md) {
-    flex-direction: row;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
 .p-point__card {
   max-width: myrem(320);
   width: 100%;
-  margin: myrem(89) auto 0;
-  padding: 0 0 myrem(40);
+  margin: 0 auto;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -47,8 +48,7 @@
   background-color: $white;
   border: 1px solid #dddddd;
   @include mq(md) {
-    margin: myrem(87) 0 0;
-    padding: 0;
+    // padding: 0;
   }
 }
 
@@ -105,15 +105,24 @@
 }
 
 .p-point__card-text {
-  padding: myrem(6) myrem(36) 0;
+  padding: myrem(15) myrem(36) myrem(40);
   font-size: myrem(12);
   line-height: 1.8;
+  @include mq(md) {
+    padding: myrem(6) myrem(36) myrem(29);
+  }
 }
 
 .p-point__card-text1 {
-  padding: myrem(6) myrem(49) 0;
+  padding: myrem(15) myrem(36) myrem(40);
+  @include mq(md) {
+    padding: myrem(6) myrem(49) myrem(28);
+  }
 }
 
 .p-point__card-text3 {
-  padding: myrem(8) myrem(28) myrem(20);
+  padding: myrem(15) myrem(36) myrem(40);
+  @include mq(md) {
+    padding: myrem(8) myrem(28) myrem(20);
+  }
 }

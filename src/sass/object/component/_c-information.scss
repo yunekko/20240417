@@ -4,12 +4,10 @@
 
 .c-information-catch {
   margin: 0 auto;
-  padding-top: myrem(39);
   max-width: myrem(300);
   position: relative;
   @include mq(md) {
     max-width: myrem(500);
-    margin: myrem(2) auto 0;
   }
 }
 
@@ -28,11 +26,11 @@
 .c-information-catch__image {
   width: myrem(122);
   position: absolute;
-  top: myrem(19);
+  top: myrem(-16);
   right: -9%;
   z-index: 10;
   @include mq(md) {
-    top: myrem(-21);
+    top: myrem(-61);
     right: myrem(7);
   }
 }
@@ -42,7 +40,7 @@
   object-fit: contain;
 }
 
-.c-information-boxes {
+.c-information-box {
   margin: myrem(19) auto 0;
   max-width: myrem(750);
   position: relative;
@@ -56,7 +54,8 @@
   }
 }
 
-.c-information-box__bottom {
+.c-information-box__first,
+.c-information-box__second {
   width: myrem(350);
   margin: 0 auto;
   padding: myrem(13) myrem(13) myrem(6);

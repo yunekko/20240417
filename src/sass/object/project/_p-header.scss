@@ -39,7 +39,7 @@
   }
 }
 
-.p-header-nav__box {
+.p-header__nav-box {
   display: none;
   position: fixed;
   width: 100vw;
@@ -59,14 +59,14 @@
   }
 }
 
-.p-header-nav {
+.p-header__nav {
   margin-top: myrem(90);
   @include mq(md) {
     margin-top: 0;
   }
 }
 
-.p-header-nav__list {
+.p-header__nav-list {
   display: flex;
   flex-direction: column;
   row-gap: myrem(23);
@@ -83,7 +83,7 @@
   font-weight: normal;
 }
 
-.p-header-nav__item {
+.p-header__nav-item {
   font-size: myrem(14);
   font-weight: bold;
 }

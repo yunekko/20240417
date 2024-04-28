@@ -43,35 +43,33 @@
 
 .p-service__title {
   margin: 0 auto;
-  padding: 0 myrem(10);
+  padding: 0 myrem(10) 0;
   width: fit-content;
   border-bottom: 2px solid $orange;
 }
 
 .p-service__cards {
-  margin-top: myrem(84);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  row-gap: myrem(40);
+  margin: myrem(84) auto myrem(75);
+  max-width: myrem(1115);
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: myrem(25);
   @include mq(md) {
+    grid-template-columns: repeat(3, 1fr);
     flex-direction: row;
     align-items: start;
   }
 }
 
 .p-service__card {
+  margin: 0 auto;
   padding: myrem(5);
   width: myrem(350);
   text-align: center;
   @include mq(md) {
     padding: 0;
   }
-}
-
-.p-service__card-center {
-  margin: 0 myrem(36) 0 myrem(25);
 }
 
 .p-service__image {
@@ -98,20 +96,12 @@
   border-bottom: 1px solid $blue;
 }
 
-.p-service__box-title-center {
-  margin-left: myrem(6);
-}
-
 .p-service__box-text {
   margin: myrem(13) 0 0 myrem(0);
   max-width: myrem(347);
   width: 100%;
   font-size: myrem(12);
   line-height: 1.8;
-}
-
-.p-service__box-text-center {
-  margin: myrem(13) 0 0 myrem(6);
 }
 
 .p-service__cases {
@@ -124,10 +114,6 @@
   @include mq(md) {
     padding: myrem(14) myrem(17) myrem(11);
   }
-}
-
-.p-service__cases-center {
-  margin-left: myrem(5);
 }
 
 .p-service__case-title {
@@ -173,13 +159,9 @@
   border: 1px solid $black;
 }
 
-.p-service__more-center {
-  margin: myrem(31) 0 0 myrem(9);
-}
-
 // 問い合わせ先
 
-.p-service-page__information {
+.p-service-information {
   margin-top: 0;
   @include mq(md) {
     margin-top: myrem(-2);

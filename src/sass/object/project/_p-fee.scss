@@ -8,11 +8,11 @@
 }
 
 .p-fee__about {
-  margin: myrem(75) auto 0;
-  padding: 0 myrem(15);
+  margin: 0 auto;
+  padding: myrem(50) myrem(15);
   max-width: myrem(1000);
   @include mq(md) {
-    padding: 0;
+    padding: myrem(74) 0 myrem(168);
   }
 }
 

@@ -1,6 +1,7 @@
 @use "global" as *;
 
 .p-breadcrumb__list {
+  margin: 0;
   display: flex;
 }
 

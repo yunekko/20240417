@@ -1,26 +1,19 @@
 @use "global" as *;
 
-.l-service-page__main-view {
-  margin-top: myrem(30);
+.l-service-lawyer {
+  padding-top: myrem(110);
+  padding-bottom: myrem(94);
 }
 
-.l-service-page__main-service {
-  margin-top: myrem(94);
-  padding: 0 myrem(10);
+.l-service-main {
+  padding: 0 myrem(10) myrem(75);
   @include mq(md) {
-    padding: 0;
+    padding: 0 0 myrem(91) 0;
   }
 }
 
-.l-service-page__fee {
-  margin-top: myrem(91);
-  padding-bottom: myrem(100);
-  @include mq(md) {
-    padding-bottom: myrem(167);
-  }
-}
-
-.l-service-page__information {
+.l-service-information {
+  padding-top: myrem(40);
   padding-bottom: myrem(50);
   @include mq(md) {
     padding-bottom: myrem(53);

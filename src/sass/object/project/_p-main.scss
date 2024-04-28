@@ -183,11 +183,7 @@
 // メインビュー
 
 .p-main-view {
-  margin-top: myrem(81);
   background-color: $blue-sub;
-  @include mq(md) {
-    margin-top: myrem(105);
-  }
 }
 
 .p-main-view__box {

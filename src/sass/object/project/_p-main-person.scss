@@ -3,7 +3,6 @@
 // 弁護士紹介---------------------------------------
 .p-main-person__introduce {
   margin: 0 auto;
-  padding-top: myrem(65);
   max-width: myrem(1040);
   display: flex;
   flex-direction: column;
@@ -34,7 +33,7 @@
   max-width: myrem(320);
   padding: myrem(15);
   position: initial;
-  top: 32.5%;
+  top: 18.5%;
   left: 40.5%;
   background-color: $white;
   text-align: center;
@@ -48,7 +47,7 @@
   }
 }
 
-.p-main-person {
+.p-main-person__info-inner {
   font-size: myrem(32);
   font-family: $font-jp;
   font-weight: bold;
@@ -60,6 +59,7 @@
 
 .p-main-person__comment {
   margin-top: myrem(19);
+  margin-bottom: myrem(33);
   font-size: myrem(14);
   font-family: $font-jp;
   font-weight: normal;

@@ -89,32 +89,26 @@
         <span></span>
         <span></span>
       </button>
-      <div class="p-header-nav__box js-drawer">
-        <nav class="p-header-nav">
-          <ul class="p-header-nav__list">
-            <li class="p-header-nav__item">
-              <a class="p-header-nav__link" href="./index.html">ホーム</a>
+      <div class="p-header__nav-box js-drawer">
+        <nav class="p-header__nav">
+          <ul class="p-header__nav-list">
+            <li class="p-header__nav-item">
+              <a href="./index.html">ホーム</a>
             </li>
-            <li class="p-header-nav__item">
-              <a class="p-header-nav__link" href="#">取扱分野</a>
+            <li class="p-header__nav-item">
+              <a href="#">取扱分野</a>
             </li>
-            <li class="p-header-nav__item">
-              <a
-                class="p-header-nav__link"
-                href="index.html#l-top-page__main-person"
-                >弁護士紹介</a
-              >
+            <li class="p-header__nav-item">
+              <a href="index.html#l-top-main-person">弁護士紹介</a>
             </li>
-            <li class="p-header-nav__item">
-              <a class="p-header-nav__link" href="#l-service-page__fee"
-                >弁護士費用</a
-              >
+            <li class="p-header__nav-item">
+              <a href="#l-service-fee">弁護士費用</a>
             </li>
-            <li class="p-header-nav__item">
-              <a class="p-header-nav__link" href="index.html">事務所のご案内</a>
+            <li class="p-header__nav-item">
+              <a href="index.html">事務所のご案内</a>
             </li>
-            <li class="p-header-nav__item">
-              <a class="p-header-nav__link" href="index.html">お知らせ</a>
+            <li class="p-header__nav-item">
+              <a href="index.html">お知らせ</a>
             </li>
           </ul>
         </nav>
@@ -125,7 +119,7 @@
         <a class="p-header__contact-button" href="#">お問い合わせ</a>
       </div>
     </header>
-    <main>
+    <main class="l-main">
       <!-- パンくずリスト -->
       <div class="l-breadcrumb">
         <ol class="p-breadcrumb__list">
@@ -135,7 +129,7 @@
       </div>
 
       <!-- メインビュー -->
-      <section class="l-service-page__main-view">
+      <section class="l-service-view">
         <div class="p-service-view">
           <div class="c-section-title p-service-view__title">
             <h3 class="p-service-view__title-top">取扱分野</h3>
@@ -145,8 +139,8 @@
       </section>
 
       <!-- 弁護士紹介 -->
-      <section class="l-service-page__main-person">
-        <div class="p-lawyer__introduce">
+      <section class="l-service-lawyer">
+        <div class="p-lawyer">
           <div class="p-lawyer__info c-bg-gray__ef">
             <div class="p-lawyer__info-inner">
               <h3 class="p-lawyer__title">
@@ -174,7 +168,7 @@
       </section>
 
       <!-- 業務内容 -->
-      <section class="l-service-page__main-service">
+      <section class="p-service l-service-main">
         <h3 class="c-section-title p-service__title">主な取扱業務</h3>
 
         <div class="p-service__cards">
@@ -200,19 +194,17 @@
             </div>
             <a class="p-detail-button p-service__more" href="#">詳細をみる </a>
           </div>
-          <div class="p-service__card p-service__card-center">
+          <div class="p-service__card">
             <div class="p-service__image">
               <img src="./images/service_image-2.jpg" alt="若い男女の写真" />
             </div>
             <div class="p-service__box">
-              <p class="p-service__box-title p-service__box-title-center">
-                離婚・男女問題
-              </p>
-              <p class="p-service__box-text p-service__box-text-center">
+              <p class="p-service__box-title">離婚・男女問題</p>
+              <p class="p-service__box-text">
                 限られた人生の中で、離婚するべきか否か、時間が解決してくれることはあまり期待できません。状況は一人ひとり違い、離婚に際して取り決めるべきことは多岐にわたります。大切な問題であるからこそ、専門家に一度ご相談することをおすすめします。
               </p>
             </div>
-            <div class="p-service__cases p-service__cases-center">
+            <div class="p-service__cases">
               <p class="p-service__case-title">想定されるケース</p>
               <ul class="p-service__case-list">
                 <li class="p-service__case-item">人身事故</li>
@@ -222,11 +214,7 @@
                 <li class="p-service__case-item">自賠責保険への請求</li>
               </ul>
             </div>
-            <a
-              class="p-detail-button p-service__more p-service__more-center"
-              href="#"
-              >詳細をみる
-            </a>
+            <a class="p-detail-button p-service__more" href="#">詳細をみる </a>
           </div>
           <div class="p-service__card">
             <div class="p-service__image">
@@ -257,59 +245,64 @@
 
         <!-- その他分野 -->
 
-        <div class="p-other-service__cards p-other-service2__cards">
-          <div class="p-other-service__card p-other-service2__card">
-            <div class="p-other-service__image p-other-service2__image">
-              <img src="./images/service-4.png" alt="疲弊した女性のアイコン" />
-            </div>
-            <div class="p-other-service__box p-other-service2__box">
-              <p class="p-other-service__box-title">不貞慰謝料</p>
-              <p class="p-other-service__box-text p-other-service2__box-text">
-                浮気・不倫のことを不貞行為といい、この不貞行為に対する損害賠償として認められているのが慰謝料請求です。
-              </p>
-            </div>
-          </div>
-          <div
-            class="p-other-service__card p-other-service2__card p-other-service2__card-center"
-          >
-            <div
-              class="p-other-service__image p-other-service__image-lg p-other-service2__image-second"
-            >
-              <img
-                src="./images/service-5.png"
-                alt="這いつくばっている男性のアイコン"
-              />
+        <div class="p-other-service2">
+          <div class="p-other-service__cards p-other-service2__cards">
+            <div class="p-other-service__card p-other-service2__card">
+              <div class="p-other-service__image p-other-service2__image">
+                <img
+                  src="./images/service-4.png"
+                  alt="疲弊した女性のアイコン"
+                />
+              </div>
+              <div class="p-other-service__box p-other-service2__box">
+                <p class="p-other-service__box-title">不貞慰謝料</p>
+                <p class="p-other-service__box-text p-other-service2__box-text">
+                  浮気・不倫のことを不貞行為といい、この不貞行為に対する損害賠償として認められているのが慰謝料請求です。
+                </p>
+              </div>
             </div>
             <div
-              class="p-other-service__box p-other-service__box-center p-other-service2__box-second"
+              class="p-other-service__card p-other-service2__card p-other-service2__card-center"
             >
-              <p class="p-other-service__box-title">犯罪・刑事事件</p>
-              <p
-                class="p-other-service__box-text p-other-service2__box-text p-other-service2__box-text-second"
+              <div
+                class="p-other-service__image p-other-service__image-lg p-other-service2__image-second"
               >
-                刑事事件は時間との戦い。釈放,不起訴に向けた迅速な対応が不可欠です。
-              </p>
-            </div>
-          </div>
-          <div class="p-other-service__card p-other-service2__card">
-            <div class="p-other-service__image p-other-service2__image-third">
-              <img src="./images/service-6.png" alt="お札のアイコン" />
-            </div>
-            <div
-              class="p-other-service__box p-other-service2__box p-other-service2__box-third"
-            >
-              <p class="p-other-service__box-title">借金・債務整理</p>
-              <p
-                class="p-other-service__box-text p-other-service2__box-text p-other-service2__box-text-third"
+                <img
+                  src="./images/service-5.png"
+                  alt="這いつくばっている男性のアイコン"
+                />
+              </div>
+              <div
+                class="p-other-service__box p-other-service__box-center p-other-service2__box-second"
               >
-                借金弁護士が介入することで、収支のバランスの正常化を図ることができます。
-              </p>
+                <p class="p-other-service__box-title">犯罪・刑事事件</p>
+                <p
+                  class="p-other-service__box-text p-other-service2__box-text p-other-service2__box-text-second"
+                >
+                  刑事事件は時間との戦い。釈放,不起訴に向けた迅速な対応が不可欠です。
+                </p>
+              </div>
+            </div>
+            <div class="p-other-service__card p-other-service2__card">
+              <div class="p-other-service__image p-other-service2__image-third">
+                <img src="./images/service-6.png" alt="お札のアイコン" />
+              </div>
+              <div
+                class="p-other-service__box p-other-service2__box p-other-service2__box-third"
+              >
+                <p class="p-other-service__box-title">借金・債務整理</p>
+                <p
+                  class="p-other-service__box-text p-other-service2__box-text p-other-service2__box-text-third"
+                >
+                  借金弁護士が介入することで、収支のバランスの正常化を図ることができます。
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </section>
       <!-- 料金について -->
-      <section id="l-service-page__fee" class="l-service-page__fee">
+      <section id="l-service-fee" class="p-fee l-service-fee">
         <h3 class="c-section-title p-fee__title">料金について</h3>
         <div class="p-fee__about">
           <p class="p-fee__text">
@@ -326,8 +319,8 @@
       </section>
 
       <!-- 問い合わせ先 -->
-      <section class="c-bg-gray__ef l-service-page__information">
-        <div class="c-information-catch p-service-page__information">
+      <section class="c-bg-gray__ef l-service-information">
+        <div class="c-information-catch p-service-information">
           <h3 class="c-information-catch__text">
             初回60分のご相談は無料です。<br />
             まずはお気軽にご相談ください！
@@ -339,14 +332,14 @@
             />
           </div>
         </div>
-        <div class="c-information-boxes">
-          <div class="c-information-box__bottom">
+        <div class="c-information-box">
+          <div class="c-information-box__first">
             <p class="c-information-box__opening-time">
               受付時間 10:00〜20:00 土日祝休み
             </p>
             <p class="c-information-box__tel">01-2345-6789</p>
           </div>
-          <div class="c-information-box__bottom">
+          <div class="c-information-box__second">
             <p class="c-information-box__comment">
               24時間お問い合わせを受け付けております
             </p>
@@ -356,37 +349,37 @@
       </section>
     </main>
     <footer class="p-footer">
-      <div class="p-footer-top">
-        <p class="p-footer-top__title">ベリーナイス法律事務所</p>
-        <p class="p-footer-top__sub-title">橋下冬馬弁護士</p>
+      <div class="p-footer__top">
+        <p class="p-footer__top-title">ベリーナイス法律事務所</p>
+        <p class="p-footer__top-sub-title">橋下冬馬弁護士</p>
       </div>
-      <nav class="p-footer-nav">
-        <ul class="p-footer-nav__list">
-          <li class="p-footer-nav__item">
-            <a class="p-footer-nav__link" href="#">よくある質問</a>
+      <nav class="p-footer__nav">
+        <ul class="p-footer__nav-list">
+          <li class="p-footer__nav-item">
+            <a href="#">よくある質問</a>
           </li>
-          <li class="p-footer-nav__item">
-            <a class="p-footer-nav__link" href="#">お客様の声</a>
+          <li class="p-footer__nav-item">
+            <a href="#">お客様の声</a>
           </li>
-          <li class="p-footer-nav__item">
-            <a class="p-footer-nav__link" href="#">お問い合わせ</a>
+          <li class="p-footer__nav-item">
+            <a href="#">お問い合わせ</a>
           </li>
-          <li class="p-footer-nav__item">
-            <a class="p-footer-nav__link" href="#">プライバシーポリシー</a>
+          <li class="p-footer__nav-item">
+            <a href="#">プライバシーポリシー</a>
           </li>
-          <li class="p-footer-nav__item">
-            <a class="p-footer-nav__link" href="#">サイトマップ</a>
+          <li class="p-footer__nav-item">
+            <a href="#">サイトマップ</a>
           </li>
         </ul>
       </nav>
-      <div class="p-footer-bottom">
+      <div class="p-footer__bottom">
         <a href="#"
-          ><div class="p-footer-bottom__twitter">
-            <i class="bi bi-twitter p-footer-bottom__twitter-inner"></i></div
+          ><div class="p-footer__twitter">
+            <i class="bi bi-twitter p-footer__twitter-inner"></i></div
         ></a>
         <a href="#">
-          <div class="p-footer-bottom__line">
-            <i class="bi bi-line p-footer-bottom__line-inner"></i></div
+          <div class="p-footer__line">
+            <i class="bi bi-line p-footer__line-inner"></i></div
         ></a>
       </div>
     </footer>

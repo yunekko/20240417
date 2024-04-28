@@ -1,22 +1,19 @@
 @use "global" as *;
 
-.p-lawyer__introduce {
+.p-lawyer {
   margin: 0 auto;
   max-width: myrem(1280);
   position: relative;
 }
 
 .p-lawyer__info {
-  margin-top: myrem(110);
   margin-left: 0;
-  padding-bottom: myrem(60);
   max-width: myrem(812);
   display: flex;
   align-items: center;
   flex-direction: column;
   @include mq(md) {
     margin-left: myrem(-52);
-    padding-bottom: myrem(108);
   }
 }
 
@@ -25,8 +22,8 @@
   padding: myrem(12);
   max-width: myrem(520);
   @include mq(md) {
-    margin: myrem(108) auto 0;
-    padding: 0 0 0 myrem(47);
+    margin: 0 auto;
+    padding: myrem(108) 0 myrem(108) myrem(47);
   }
 }
 

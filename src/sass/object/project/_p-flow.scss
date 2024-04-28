@@ -7,15 +7,14 @@
 
 .p-flow__section-title {
   margin: 0 auto;
-  padding: myrem(106) myrem(38) myrem(5) myrem(19);
-  padding-top: myrem(106);
+  padding: 0 myrem(38) myrem(5) myrem(19);
   width: fit-content;
   font-size: myrem(27);
   color: $blue;
   border-bottom: 2px solid $blue;
 }
 
-.p-flows {
+.p-flow__box {
   margin-top: myrem(50);
 }
 

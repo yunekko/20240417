@@ -1,0 +1,8 @@
+@use "global" as *;
+
+.l-main {
+  margin-top: myrem(81);
+  @include mq(md) {
+    margin-top: myrem(105);
+  }
+}

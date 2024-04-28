@@ -47,7 +47,7 @@ $(".c-hamburger-button").click(function () {
 });
 
 if (window.matchMedia("(max-width: 768px)").matches) {
-  $(".p-header-nav__item a").click(function () {
+  $(".p-header__nav-item a").click(function () {
     $(".c-hamburger-button").removeClass("is-active");
     $("body").removeClass("active");
     $(".js-drawer").fadeToggle();

@@ -1,0 +1,36 @@
+@use "global" as *;
+
+.l-top-point {
+  padding-top: myrem(67);
+  @include mq(md) {
+    padding-top: myrem(194);
+  }
+}
+
+.l-top-service {
+  padding: 0 myrem(15) myrem(77);
+}
+
+.l-top-flow {
+  padding-top: myrem(107);
+  padding-bottom: myrem(98);
+}
+
+.l-top-main-person {
+  padding-top: myrem(65);
+  padding-bottom: myrem(95);
+}
+
+.l-top-notice {
+  padding-top: myrem(77);
+  padding-bottom: myrem(74);
+}
+
+.l-top-information {
+  padding-top: myrem(40);
+  padding-bottom: myrem(50);
+}
+
+.l-top-office {
+  padding-bottom: myrem(60);
+}

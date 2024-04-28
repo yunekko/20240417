@@ -2,7 +2,7 @@
 
 // その他分野---------------------------------------------
 .p-other-service__title {
-  margin: myrem(60) auto 0;
+  margin: myrem(60) auto myrem(38);
   padding: 0 myrem(12) myrem(5) myrem(7);
   width: fit-content;
   font-size: myrem(20);
@@ -11,13 +11,15 @@
 
 .p-other-service__cards {
   margin-top: myrem(70);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  row-gap: myrem(30);
+  margin: 0 auto;
+  max-width: myrem(1165);
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  row-gap: myrem(45);
   @include mq(md) {
-    margin: myrem(39) 0 0 myrem(-6);
-    flex-direction: row;
+    grid-template-columns: repeat(3, 1fr);
+    gap: myrem(10);
   }
 }
 
@@ -30,16 +32,8 @@
   box-shadow: 0 0 myrem(5) myrem(2) rgba(0, 0, 0, 0.1);
   border-radius: myrem(5);
   @include mq(md) {
-    margin: 0;
     max-width: myrem(365);
     padding: myrem(35) myrem(45) myrem(33) myrem(42);
-  }
-}
-
-.p-other-service__card-center {
-  margin: 0 auto;
-  @include mq(md) {
-    margin: 0 myrem(23) 0 myrem(28);
   }
 }
 
@@ -109,7 +103,8 @@
 
 // サービスページ　その他の分野
 .p-other-service2__cards {
-  margin-top: myrem(75);
+  max-width: myrem(1111);
+  gap: myrem(24);
 }
 
 .p-other-service2__card {
@@ -123,10 +118,8 @@
 }
 
 .p-other-service2__card-center {
-  margin: 0 auto;
   padding: myrem(2) myrem(18);
   @include mq(md) {
-    margin: 0 myrem(21) 0 myrem(28);
     padding: myrem(17) myrem(35) myrem(7) myrem(39);
   }
 }
