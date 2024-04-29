@@ -160,8 +160,11 @@
 }
 
 // 問い合わせ先
-
 .p-service-information {
+  background-color: $gray-4;
+}
+
+.p-service-information__inner {
   margin-top: 0;
   @include mq(md) {
     margin-top: myrem(-2);

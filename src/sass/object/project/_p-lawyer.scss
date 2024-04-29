@@ -12,6 +12,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  background-color: $gray-4;
   @include mq(md) {
     margin-left: myrem(-52);
   }

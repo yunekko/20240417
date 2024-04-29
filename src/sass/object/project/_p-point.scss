@@ -25,6 +25,12 @@
   }
 }
 
+.p-point__bottom {
+  padding-top: myrem(87);
+  padding-bottom: myrem(63);
+  background-color: $gray-2;
+}
+
 .p-point__cards {
   margin: 0 auto;
   max-width: myrem(1113);

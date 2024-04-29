@@ -88,6 +88,11 @@
   font-weight: bold;
 }
 
+.p-header__nav-item a {
+  width: 100%;
+  display: inline-block;
+}
+
 .p-header__information {
   margin: myrem(33) auto myrem(23);
   width: myrem(240);

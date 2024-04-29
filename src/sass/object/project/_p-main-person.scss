@@ -1,6 +1,10 @@
 @use "global" as *;
 
 // 弁護士紹介---------------------------------------
+.p-main-person {
+  background-color: $gray-2;
+}
+
 .p-main-person__introduce {
   margin: 0 auto;
   max-width: myrem(1040);
